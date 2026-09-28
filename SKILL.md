@@ -74,7 +74,7 @@ Two independent judgments:
 - **Workflow feedback** — did the guidance and tools support the work?
   Look at user corrections, failed approaches, and avoidable rework: e.g. conflicting or misleading wording, docs vs. actual behavior, repeated exception requests, failed tool calls, redundant checks or confirmations.
 
-Before concluding there is no material feedback, consider whether those observations suggest a concrete improvement to the guidance or working method, even when instructions were followed.
+Before concluding there is no material feedback, look for useful improvements to the guidance or working method in those observations, even when instructions were followed; propose a concrete change when the evidence supports one.
 Keep routine review brief; expand for material findings.
 Per finding: source — observation → impact → cause (or "unclear") → minimal suggestion, stated as the action to take rather than only what to avoid.
 Separate observations from hypotheses; one failure is not a new rule, and no self-blame or "will be more careful".
