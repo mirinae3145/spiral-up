@@ -7,7 +7,9 @@ The execution rules live in [SKILL.md](SKILL.md).
 ## What to expect
 
 The skill checks the actual project state, reconciles it with the task, removes disposable leftovers, updates documentation made inaccurate by the task, and runs relevant checks.
-It reports missing work as follow-ups rather than continuing implementation during closeout.
+A request to finish includes necessary work within the authorized objective; a request only to summarize, hand off, or stop reports unfinished work without continuing implementation.
+Required documentation may be updated or created as part of completion.
+Passing checks are reused unless later changes could affect them; validation limits remain explicit.
 Instruction adherence and workflow feedback are assessed separately from whether the task succeeded.
 
 Cleanup preserves the minimum reproduction code, inputs, and logs supporting a conclusion, including synthetic inputs and temporary scripts, while removing disposable, regenerable binaries and caches.
@@ -17,10 +19,13 @@ A useful retrospective describes observable behavior, its impact, and a concrete
 It should not end with self-blame or assume that one failure proves a defect in the user, environment, guidance, or model.
 Recovered mistakes can still contain useful evidence.
 
-When automatic context compaction hides earlier conversation or tool calls, the skill first tries to recover the relevant task history from existing local session records.
-For Codex, it looks under `CODEX_HOME` (or `~/.codex`) and confirms the session identity before reviewing the omitted messages and tool results in manageable chunks.
+When missing history could affect a material review conclusion, the skill loads the [session recovery procedure](references/session-recovery.md) and attempts to recover the relevant local records.
 This read-only review is independent of optional case recording and does not modify session logs.
 If records are missing or incomplete, the summary states the remaining review limitations.
+
+A separate handoff file is created when later work or transfer benefits from it.
+Durable handoffs use an established authorized location; temporary handoff files are identified as temporary.
+Related tracker items are consulted only when the tracker was used for the task or the user designated the items, and updates require applicable existing authorization or new approval.
 
 ## Set up case accumulation
 
@@ -44,7 +49,8 @@ Either store can be used alone.
 Keep the original incident in one place and reference it elsewhere when useful.
 Global relevance does not require copying private project details into the global store.
 
-Once the arrangement authorizes recording, the agent can reuse it on later closeouts where that context is available.
+Once the arrangement authorizes case recording, the agent reuses that approval on later closeouts where the context is available and the store, audience, and recording scope remain covered.
+That approval does not authorize task-tracker updates, external feedback, or changes to governing instructions.
 Without a resolved arrangement, closeout still completes and leaves the candidate finding in its summary, with any storage limitation stated.
 A conversation summary alone does not guarantee that a future session will retrieve it.
 
