@@ -10,6 +10,9 @@ The skill checks the actual project state, reconciles it with the task, removes 
 It reports missing work as follow-ups rather than continuing implementation during closeout.
 Instruction adherence and workflow feedback are assessed separately from whether the task succeeded.
 
+Cleanup preserves the minimum reproduction code, inputs, and logs supporting a conclusion, including synthetic inputs and temporary scripts, while removing disposable, regenerable binaries and caches.
+Evidence left in `/tmp` is retained only for the current cleanup, not durably archived; the summary identifies its paths and this limitation, with an authorized durable location used when needed or the storage choice left explicit.
+
 A useful retrospective describes observable behavior, its impact, and a concrete improvement or further check.
 It should not end with self-blame or assume that one failure proves a defect in the user, environment, guidance, or model.
 Recovered mistakes can still contain useful evidence.

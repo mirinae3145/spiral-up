@@ -35,12 +35,16 @@ files, repo-wide cleanup, and the "done" call to the orchestrator.
 
 1. **Clean** — only in the area the task worked in; classify each leftover:
    - **SAFE**: created during this task *and* disposable (scratch scripts,
-     debug prints, temp or regenerable output). Remove it.
+     debug prints, temp or regenerable output that is not needed as evidence). Remove it.
    - **REVIEW**: probably unneeded but not provably yours or disposable
      (older results, duplicates, pre-existing untracked files). Check
      references and provenance; recommend, let the user decide.
    - **PROTECTED**: raw or measurement data, hand-written or received files,
-     unclear origin, anything another worker may use. Keep it.
+     unclear origin, anything another worker may use, or the minimum reproduction code, inputs, and logs supporting a conclusion. Keep it.
+   For example, when synthetic inputs and temporary reproduction code support an investigation's conclusion, preserve them with the relevant logs as investigation evidence; remove disposable, regenerable binaries and caches.
+   Being temporary or regenerable does not by itself make supporting evidence disposable.
+   Keeping evidence in `/tmp` only means leaving it in place during cleanup; it is not durable storage and may be cleared later.
+   Report that limitation and the retained paths in the closeout summary; when durable retention is needed, use an established authorized location or identify the unresolved storage choice.
    When unsure, pick the safer class.
 
 1. **Update** — fix only documentation this task's diff made inaccurate, in
