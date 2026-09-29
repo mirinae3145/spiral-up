@@ -11,6 +11,7 @@ A request to finish includes necessary work within the authorized objective; a r
 Required documentation may be updated or created as part of completion.
 Passing checks are reused unless later changes could affect them; validation limits remain explicit.
 Instruction adherence and workflow feedback are assessed separately from whether the task succeeded.
+The final response adapts to the task and your request, covering relevant outcomes, evidence, and remaining work without a fixed response template.
 
 Cleanup preserves the minimum reproduction code, inputs, and logs supporting a conclusion, including synthetic inputs and temporary scripts, while removing disposable, regenerable binaries and caches.
 Evidence left in `/tmp` is retained only for the current cleanup, not durably archived; the summary identifies its paths and this limitation, with an authorized durable location used when needed or the storage choice left explicit.

@@ -61,7 +61,7 @@ files, repo-wide cleanup, and the "done" call to the orchestrator.
    Reference specs, commits, and diffs by path instead of copying them, name any relevant skills for the next session, and redact secrets.
    Look up related open tasks only in a tracker used for this task or in items the user designated, when relevant to closeout.
    Before updating them, check whether existing authorization covers the concrete change; request approval only when it does not.
-   Apply **Optional case recording** below independently of whether a handoff file is needed; name records written under **Artifacts** or state any material limitation.
+   Apply **Optional case recording** below independently of whether a handoff file is needed; link any records written or state any material limitation.
 
 Commit only when asked or by repository convention. Push, merge, release,
 and remote branch deletion need explicit go-ahead in this session.
@@ -81,7 +81,8 @@ Two independent judgments:
 
 Before concluding there is no material feedback, look for useful improvements to the guidance or working method in those observations, even when instructions were followed; propose a concrete change when the evidence supports one.
 Keep routine review brief; expand for material findings.
-Per finding: source — observation → impact → cause (or "unclear") → minimal suggestion, stated as the action to take rather than only what to avoid.
+Make material findings actionable with the relevant source, observed behavior and impact, and a concrete improvement.
+Explain the cause when supported; otherwise state the uncertainty.
 Separate observations from hypotheses; one failure is not a new rule, and no self-blame or "will be more careful".
 Findings are proposals: changing instructions or filing feedback needs the user's go-ahead.
 
@@ -98,7 +99,9 @@ If no arrangement exists, leave useful findings in the summary without inventing
 
 ## Closeout summary
 
-Make the final response self-contained: state the outcome, material changes, validation and its limits, and any remaining decisions or work.
-Keep adherence findings and workflow feedback separate from task completion; omit empty sections and unsupported blanket compliance claims.
-For a trivial task, one or two lines may suffice.
-For a substantial closeout or written handoff, consult the [summary example](references/closeout-summary.md) and adapt it to the task rather than filling every section.
+Make the final response self-contained and lead with the outcome most relevant to the user.
+Include material changes, validation and its limits, and remaining decisions or work as relevant to understanding the result or continuing the task.
+Choose the structure and level of detail for the task and the user's request; this skill prescribes no fixed headings, order, table, or template.
+Keep adherence findings and workflow feedback distinguishable from task completion without requiring separate sections or unsupported blanket compliance claims.
+When a handoff document exists, link it and include enough context for the final response to stand on its own without repeating the document.
+For work that will continue, preserve consequential decisions and a clear starting point for the next session or colleague.
