@@ -42,7 +42,7 @@ Specify:
 - Any existing record format and Git tracking preference.
 
 | Store | Purpose | Typical content |
-|---|---|---|
+| --- | --- | --- |
 | Local | Preserve project context | Relevant project guidance, expected and observed behavior, evidence, impact, recovery |
 | Global | Compare across projects | Related case references, common conditions, hypotheses, mitigations, counterexamples |
 
