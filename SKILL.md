@@ -18,6 +18,16 @@ Anything outside that objective becomes a **follow-up** in the summary, not an e
 worker in a larger task closes only its own slice and leaves other workers'
 files, repo-wide cleanup, and the "done" call to the orchestrator.
 
+## Requested emphasis
+
+Accept natural-language emphasis in the invocation, such as focusing on instruction adherence, validation gaps, or making the handoff easy to resume.
+Treat it as a priority for additional review depth and explanation, without requiring a named mode or fixed vocabulary.
+Preserve all applicable closeout steps and completion criteria; emphasis does not expand the task's scope or authorization.
+Keep review coverage distinct from reporting length: areas outside the emphasis still receive the necessary checks and may be reported briefly when uneventful.
+Address material findings and unfinished work regardless of the requested emphasis.
+Keep emphasis separate from the requested outcome above: a focus on handoff quality alone does not mean stopping implementation or switching to a summary-only handoff.
+When no emphasis is given, use the task's evidence and risks to allocate attention across the normal flow.
+
 ## Flow
 
 1. **Inspect** — in every repository or location the task touched (not only
