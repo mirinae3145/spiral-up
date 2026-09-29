@@ -89,6 +89,12 @@ Two independent judgments:
 - **Workflow feedback** — did the guidance and tools support the work?
   Look at user corrections, failed approaches, and avoidable rework: e.g. conflicting or misleading wording, docs vs. actual behavior, repeated exception requests, failed tool calls, redundant checks or confirmations.
 
+For each confirmed adherence violation, determine whether its effects or the noncompliant condition remain in the current artifacts or workflow.
+When a violation remains unresolved, proactively propose a concrete corrective action by default, regardless of the requested emphasis; merely noting the violation or promising greater care is insufficient.
+Identify the applicable requirement, the affected artifact or practice, what should change, and how resolution can be verified, with detail proportional to the issue.
+Distinguish resolved violations from unresolved ones; when the current state cannot be established, state that uncertainty and the check needed rather than assuming resolution.
+Keep these proposals within the existing scope and authorization rules; proposing a correction does not itself authorize applying it.
+
 Before concluding there is no material feedback, look for useful improvements to the guidance or working method in those observations, even when instructions were followed; propose a concrete change when the evidence supports one.
 Keep routine review brief; expand for material findings.
 Make material findings actionable with the relevant source, observed behavior and impact, and a concrete improvement.
