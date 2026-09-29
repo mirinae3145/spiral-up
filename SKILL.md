@@ -4,9 +4,7 @@ description: >
   Closes out the current task: reconciles it with the actual project state,
   cleans up, re-verifies, reviews instruction adherence and workflow friction,
   and writes a closeout summary for resuming or handing off.
-  Use when the user explicitly asks to close out the task, either by completing it or by handing off its current state.
-  Triggers
-  include "wrap up", "마무리해", "정리하고 끝내자", "작업 마무리", "commit 전에 정리해".
+  Use when the user explicitly asks to close out the task or session, either by completing it or by handing off its current state.
 ---
 
 # Wrap Up
