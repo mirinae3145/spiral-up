@@ -41,6 +41,10 @@ Update the same incident rather than counting a later review as a new one; link 
 Preserve the original observation when adding recovery results or revising a hypothesis.
 Keep observed conditions, evidence, impact, recovery, and cause hypotheses distinct.
 Include useful counterexamples and observed results of mitigations.
+When available and relevant, identify the instruction or skill source and version in effect at the time; state when that version is unknown rather than judging past actions solely against current wording.
+For observations related to an earlier improvement, link its existing record and known applied version, and distinguish whether the changed guidance was actually used or that is unknown.
+Append dated follow-up evidence within the established case-recording scope, using the store's organization rather than requiring new fields or a separate improvement record.
+These links support later improvement review; wrap-up does not apply instruction changes merely because a case suggests them.
 Use stable identifiers and one canonical record per incident; link cross-project comparisons only in enabled stores.
 Do not copy transcripts, credentials, or private details across audiences.
 Selective records do not establish an overall failure rate or justify changing governing instructions.

@@ -1,10 +1,46 @@
-# Wrap Up
+# Wrap Up and Tune Up
 
 Wrap Up is an agent skill for closing a task with an evidence-based account of what changed, what was verified, and what remains.
 Invoke it with `wrap up`, `마무리해`, or another explicit request to finish the work.
 The execution rules live in [SKILL.md](skills/wrap-up/SKILL.md).
 
-## What to expect
+Tune Up is a companion skill for improving agent instructions and skills from accumulated cases or direct user requests.
+Its execution rules live in [Tune Up](skills/tune-up/SKILL.md).
+The two skills share a repository but can be installed and used independently.
+
+## Tune up guidance
+
+Tune Up assesses selected evidence or a direct request, finds the authoritative source, designs an improvement, applies authorized changes, and reports validation and the next observation needed to assess its effect.
+Case-derived recommendations and direct requests enter the same update procedure while preserving their different evidence and authorization.
+Direct requests do not require case collection first; analysis-only requests produce findings and a proposal without applying changes.
+
+Example requests:
+
+- "Review these wrap-up cases and propose instruction improvements without applying them."
+- "Update my personal guidance to resolve references relative to the containing document."
+- "Create a skill for this recurring review task."
+- "Assess whether the earlier guidance change helped in these later cases."
+
+The initial scope includes editing instructions and skills, adding rules or skills, consolidating duplication, and removing obsolete guidance.
+New skills may define task procedures; broader workflow systems and automation implementation remain follow-ups.
+Ordinary code changes and task closeout alone are outside Tune Up's routing.
+
+When available, Tune Up actively uses the AEM operations skill and `aem` CLI to find managed sources and perform authorized management operations.
+AEM is optional; other environments use their established authoritative sources and management arrangements.
+A failure to locate a known AEM-managed source is reported rather than bypassed by editing an unverified installation.
+Source editing, installation, and publication are separate outcomes; an update request does not automatically authorize all three.
+
+Neither skill requires a particular store's directory layout, case ID format, or document headings.
+Tune Up follows the selected store's organization and can handle direct requests without any store.
+It links evidence, decisions, changed sources and known versions, checks, and later observations through the store's existing conventions when authorized.
+The case-recording configuration below does not by itself authorize separate improvement records or instruction changes.
+When a result cannot be durably recorded, it remains in the response with the limitation and next check stated.
+
+An applied source change is distinct from an installed change and from evidence that it improved a later task.
+Wrap Up can capture later observations and link them to an earlier improvement; Tune Up can then reassess its effect.
+This loop does not automatically modify guidance during closeout or claim effectiveness from a passing structure check.
+
+## What to expect from wrap-up
 
 The skill checks the actual project state, reconciles it with the task, removes disposable leftovers, updates documentation made inaccurate by the task, and runs relevant checks.
 A request to finish includes necessary work within the authorized objective; a request only to summarize, hand off, or stop reports unfinished work without continuing implementation.
@@ -87,5 +123,5 @@ Ignore rules do not affect already tracked files and are not a privacy or access
 
 ## AI disclosure
 
-This skill is developed with AI assistance and is intended for use by AI agents.
-Its reviews and cause analyses may be incomplete or mistaken; case records preserve evidence for later evaluation rather than certify a diagnosis.
+These skills are developed with AI assistance and are intended for use by AI agents.
+Their reviews and cause analyses may be incomplete or mistaken; case records preserve evidence for later evaluation rather than certify a diagnosis.
