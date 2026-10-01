@@ -31,28 +31,34 @@ Related tracker items are consulted only when the tracker was used for the task 
 ## Set up case accumulation
 
 Persistent recording is optional.
-Provide the arrangement in your request, applicable global instructions, project `CONTRIBUTING.md`, or an existing configuration available to the agent.
-The skill does not prescribe storage paths or create repository-local instruction files.
+The default personal store is `agent-loop` under the current environment's user home.
+The skill inspects the actual store's README, templates, and existing organization to choose suitable locations for cases and evidence.
+It uses `cases/` and `evidence/` only when the store has no established organization.
 
-Specify:
+Override the location or recording mode in your request, applicable guidance, or an optional UTF-8 `.config/agent-loop/config.toml` under that home:
 
-- Which stores are enabled: local, global, or both, with their locations and an explicit base for relative paths.
-- Whether the agent should automatically record material cases during closeout or only propose entries.
-- Whether each store is personal or shared, and any content restrictions.
-- Any existing record format and Git tracking preference.
+```toml
+version = 1
 
-| Store | Purpose | Typical content |
-| --- | --- | --- |
-| Local | Preserve project context | Relevant project guidance, expected and observed behavior, evidence, impact, recovery |
-| Global | Compare across projects | Related case references, common conditions, hypotheses, mitigations, counterexamples |
+[case_recording]
+root = "/absolute/path/to/personal-store"
+mode = "automatic"
+audience = "personal"
+```
 
-Either store can be used alone.
-Keep the original incident in one place and reference it elsewhere when useful.
-Global relevance does not require copying private project details into the global store.
+Use an absolute path valid in the current environment.
+On native Windows, use a TOML literal string for paths containing backslashes.
+Windows and WSL resolve their own home directories and can select different stores.
+No configuration file is required to inspect the default location.
+The default path or an existing directory alone does not authorize persistent writes.
+Authorize recording in your request or applicable guidance, or enable `automatic` mode in the local configuration.
+Use `proposals` for candidate entries without writes, or `disabled` to turn off recording.
+An invalid enabled configuration or an unavailable selected store is reported without preventing closeout or silently selecting another store.
 
-Once the arrangement authorizes case recording, the agent reuses that approval on later closeouts where the context is available and the store, audience, and recording scope remain covered.
-That approval does not authorize task-tracker updates, external feedback, or changes to governing instructions.
-Without a resolved arrangement, closeout still completes and leaves the candidate finding in its summary, with any storage limitation stated.
+Recording approval is reused within its store, audience, and scope.
+It does not authorize task-tracker updates, external feedback, changes to governing instructions, or Git commits and pushes.
+The [case accumulation procedure](skills/wrap-up/references/case-accumulation.md) describes discovery, placement, and evidence preservation.
+Without a resolved recording arrangement, useful findings remain in the closeout summary.
 A conversation summary alone does not guarantee that a future session will retrieve it.
 
 ## Best practices

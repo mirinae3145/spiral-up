@@ -78,10 +78,11 @@ and remote branch deletion need explicit go-ahead in this session.
 
 ## Optional case recording
 
-Check the user request, applicable guidance, existing configuration, and current work area for an established recording arrangement.
-When an arrangement exists, read [Case accumulation](references/case-accumulation.md) before recording or proposing entries.
-Reuse existing authorization specifically for case-record writes within its established scope.
-If no arrangement exists, leave useful findings in the summary without inventing a store or blocking closeout.
+Use `agent-loop` under the current execution environment's user home as the neutral default store location.
+A user request, applicable guidance, or local configuration may override the location and recording mode.
+Read [Case accumulation](references/case-accumulation.md) to resolve those choices, inspect the actual store structure, and record or propose material cases.
+A default path does not by itself authorize writing or creating a store.
+Reuse established recording authorization within its scope; otherwise leave candidate findings in the summary without blocking closeout.
 
 ## Closeout summary
 
