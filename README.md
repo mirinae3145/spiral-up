@@ -121,6 +121,10 @@ It should inspect the existing configuration, preserve its contents, derive a pa
 No global Git settings are changed merely by invoking this skill.
 Ignore rules do not affect already tracked files and are not a privacy or access-control mechanism.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, design boundaries, validation, and contribution practices.
+
 ## AI disclosure
 
 These skills are developed with AI assistance and are intended for use by AI agents.
