@@ -2,7 +2,7 @@
 
 Wrap Up is an agent skill for closing a task with an evidence-based account of what changed, what was verified, and what remains.
 Invoke it with `wrap up`, `마무리해`, or another explicit request to finish the work.
-The execution rules live in [SKILL.md](SKILL.md).
+The execution rules live in [SKILL.md](skills/wrap-up/SKILL.md).
 
 ## What to expect
 
@@ -20,7 +20,7 @@ A useful retrospective describes observable behavior, its impact, and a concrete
 It should not end with self-blame or assume that one failure proves a defect in the user, environment, guidance, or model.
 Recovered mistakes can still contain useful evidence.
 
-When missing history could affect a material review conclusion, the skill loads the [session recovery procedure](references/session-recovery.md) and attempts to recover the relevant local records.
+When missing history could affect a material review conclusion, the skill loads the [session recovery procedure](skills/wrap-up/references/session-recovery.md) and attempts to recover the relevant local records.
 This read-only review is independent of optional case recording and does not modify session logs.
 If records are missing or incomplete, the summary states the remaining review limitations.
 
