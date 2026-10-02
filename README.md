@@ -1,12 +1,14 @@
-# Wrap Up and Tune Up
+# Spiral Up Your Agent
 
-Wrap Up is an agent skill for closing a task with an evidence-based account of what changed, what was verified, and what remains.
-Invoke it with `wrap up`, `마무리해`, or another explicit request to finish the work.
-The execution rules live in [SKILL.md](skills/wrap-up/SKILL.md).
+> Wrap up the workflow.
+> Tune up the guidance.
 
-Tune Up is a companion skill for improving agent instructions and skills from accumulated cases or direct user requests.
-Its execution rules live in [Tune Up](skills/tune-up/SKILL.md).
-The two skills share a repository but can be installed and used independently.
+Spiral Up brings together two agent skills for task closeout and guidance improvement.
+
+[Wrap Up](skills/wrap-up/SKILL.md) closes a task by checking the final state, verifying results, and reviewing instruction adherence and workflow friction.
+[Tune Up](skills/tune-up/SKILL.md) helps improve agent instructions and skills from accumulated cases or direct requests, and assess earlier changes using later evidence.
+
+Observations from one task can inform guidance for the next, whose results provide evidence for further review.
 
 ## Tune up guidance
 
