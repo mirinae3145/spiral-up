@@ -5,7 +5,7 @@
 
 Spiral Up brings together two agent skills for task closeout and guidance improvement.
 
-[Wrap Up](skills/wrap-up/SKILL.md) closes a task by checking the final state, verifying results, and reviewing instruction adherence and workflow friction.
+[Wrap Up](skills/wrap-up/SKILL.md) closes a task by checking the final state, verifying results, and capturing useful observations about guidance and workflow.
 [Tune Up](skills/tune-up/SKILL.md) helps improve agent instructions and skills from accumulated cases or direct requests, and assess earlier changes using later evidence.
 
 Observations from one task can inform guidance for the next, whose results provide evidence for further review.

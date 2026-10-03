@@ -16,7 +16,8 @@ Optional skill-authoring validators may have their own dependencies.
 
 ### Skill responsibilities and packaging
 
-Wrap Up closes the user's task, evaluates adherence and workflow feedback, and optionally records material cases.
+Wrap Up closes the user's task, evaluates adherence and workflow feedback, and captures material observations for later improvement, optionally recording cases.
+Those observations can include useful outcomes, friction, and evidence about earlier guidance changes without requiring a separate improvement investigation.
 Tune Up evaluates cases or direct improvement requests, updates instructions and skills within authorization, and connects changes to subsequent evidence.
 Keep closeout separate from applying guidance improvements: recording a recommendation during wrap-up must not automatically invoke an update.
 Descriptions must keep ordinary code work, closeout, and guidance improvement distinguishable for skill selection.

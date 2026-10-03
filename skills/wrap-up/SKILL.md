@@ -2,14 +2,16 @@
 name: wrap-up
 description: >
   Closes out the current task: reconciles it with the actual project state,
-  cleans up, re-verifies, reviews instruction adherence and workflow friction,
-  and writes a closeout summary for resuming or handing off.
+  cleans up, verifies results, and captures useful observations about guidance
+  and workflow for later improvement, resuming, or handing off.
   Use when the user explicitly asks to close out the task or session, either by completing it or by handing off its current state.
 ---
 
 # Wrap Up
 
 Close out the task according to the user's requested outcome.
+Leave a verified result or a resumable handoff, along with material observations that can inform the next task's guidance.
+Review instruction adherence and workflow feedback as evidence for later improvement; closeout does not itself apply guidance changes or require case recording or Tune Up to be installed.
 If the user asks only to summarize, hand off, or stop at the current state, report unfinished work without continuing implementation.
 If the user asks to finish the task, complete necessary work within the already authorized objective before closing out.
 Anything outside that objective becomes a **follow-up** in the summary, not an edit.
@@ -39,7 +41,6 @@ When no emphasis is given, use the task's evidence and risks to allocate attenti
 1. **Reconcile** — objective vs. evidence: met, missing, and unrequested
    changes. Handle missing work according to the requested outcome above; list unrequested
    changes for the user to keep or revert.
-   Then read and apply [Retrospective](references/retrospective.md), kept separate from task completion.
 
 1. **Clean** — only in the area the task worked in; classify each leftover:
    - **SAFE**: created during this task *and* disposable (scratch scripts,
@@ -63,6 +64,10 @@ When no emphasis is given, use the task's evidence and risks to allocate attenti
    Reuse passing results when subsequent changes cannot affect them; rerun affected checks after cleanup or further edits.
    For a new regression test, verify failure on the pre-fix code and success on the fix when feasible and meaningful.
    Distinguish passing checks from unverified regression coverage and report material validation limits.
+
+1. **Review** — read and apply [Retrospective](references/retrospective.md) against the task and final state.
+   Distinguish completion evidence from adherence findings and observations about what helped or hindered the workflow.
+   Capture material recommendations and, when relevant evidence is available, observations about earlier guidance changes for later assessment.
 
 1. **Handoff** — write the summary below.
    Create a separate handoff file only when later work or transfer benefits from it, following the project's convention.
@@ -90,5 +95,6 @@ Make the final response self-contained and lead with the outcome most relevant t
 Include material changes, validation and its limits, and remaining decisions or work as relevant to understanding the result or continuing the task.
 Choose the structure and level of detail for the task and the user's request; this skill prescribes no fixed headings, order, table, or template.
 Keep adherence findings and workflow feedback distinguishable from task completion without requiring separate sections or unsupported blanket compliance claims.
+For material improvement findings, preserve enough evidence and source context for a later guidance review without requiring a separate record or repeating the conversation.
 When a handoff document exists, link it and include enough context for the final response to stand on its own without repeating the document.
 For work that will continue, preserve consequential decisions and a clear starting point for the next session or colleague.
