@@ -37,6 +37,20 @@ Wrap Up can capture later observations for Tune Up to reassess an improvement.
 An applied change and evidence that it helped are separate outcomes.
 AEM is optional and can help Tune Up locate managed sources; installation and publication require their own authorization.
 
+## Resume handed-off work (draft)
+
+[Follow Up](skills/follow-up/SKILL.md) is a draft skill for resuming work from a handoff, closeout summary, or designated prior work record.
+It recovers the relevant context, checks what has changed, and chooses a useful restart point before continuing within the requested objective.
+You can also ask it to prepare a restart without continuing implementation.
+
+Example requests:
+
+- "Continue the task from this handoff and finish the remaining work."
+- "Read this handoff and identify the restart point without making changes."
+
+The draft is not yet registered in the AEM catalog or installed for automatic discovery.
+During development, ask the agent to read `skills/follow-up/SKILL.md` directly.
+
 ## Record cases (optional)
 
 Useful findings can stay in the closeout summary or be saved for later review.

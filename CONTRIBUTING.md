@@ -1,6 +1,6 @@
 # Contributing
 
-This guide covers development of the Wrap Up and Tune Up skills for human contributors and AI agents.
+This guide covers development of the Wrap Up and Tune Up skills and the Follow Up draft for human contributors and AI agents.
 See the [README](README.md) for user-facing behavior and setup.
 Execution rules belong in each skill's `SKILL.md` and its linked references; this guide records the design boundaries and contribution practices that changes must preserve.
 
@@ -19,8 +19,10 @@ Optional skill-authoring validators may have their own dependencies.
 Wrap Up closes the user's task, evaluates adherence and workflow feedback, and captures material observations for later improvement, optionally recording cases.
 Those observations can include useful outcomes, friction, and evidence about earlier guidance changes without requiring a separate improvement investigation.
 Tune Up evaluates cases or direct improvement requests, updates instructions and skills within authorization, and connects changes to subsequent evidence.
+The Follow Up draft recovers handed-off task context, reconciles it with the current state, and prepares or executes continuation according to the user's request.
+Handoff suggestions do not expand the task objective or grant new authorization.
 Keep closeout separate from applying guidance improvements: recording a recommendation during wrap-up must not automatically invoke an update.
-Descriptions must keep ordinary code work, closeout, and guidance improvement distinguishable for skill selection.
+Descriptions must keep ordinary code work, handoff resumption, closeout, and guidance improvement distinguishable for skill selection.
 
 The skills share a repository but are independently installable and usable.
 Each package must contain its required execution instructions and references without relying on sibling skills or repository-root documents being installed.
@@ -84,6 +86,7 @@ There is no repository-owned automated behavioral suite; do not present manual s
 
 - For changed skill instructions, use an available skill validator to check frontmatter, naming, and unfinished scaffold content.
   When `skill-creator` is available, locate its `scripts/quick_validate.py`, set `skill_validator` to that path, and run `python3 "$skill_validator" skills/wrap-up` or `python3 "$skill_validator" skills/tune-up` for the affected package.
+  For the Follow Up draft, use `skills/follow-up` as the package path.
   That validator needs Python 3 and PyYAML; report unavailable tooling rather than claiming the check passed.
 - Check local Markdown links and confirm required skill references resolve within each package independently of sibling or repository-root files.
 - Run `git diff --check`, and `git diff --cached --check` when staging a contribution.
