@@ -8,8 +8,9 @@ Execution rules belong in each skill's `SKILL.md` and its linked references; thi
 
 Work in the authoritative repository checkout and inspect staged, unstaged, and untracked changes before editing.
 When the checkout is AEM-managed, use its source-discovery interface to confirm the source rather than editing an unverified installed copy.
-This repository currently contains Markdown skill packages and documentation, with no application build, runtime dependency installation, or repository-owned test runner.
-A text editor and Git are sufficient for ordinary edits.
+This repository contains Markdown skill packages, documentation, and an optional personal-store setup helper.
+A text editor and Git are sufficient for ordinary skill edits.
+The helper and its standard-library tests require Python 3.11 or later; run `python -m unittest discover -s tests` from the repository root.
 Optional skill-authoring validators may have their own dependencies.
 
 ## Design boundaries
@@ -59,6 +60,28 @@ Keep original observations and distinguish facts, explanations, uncertainty, rec
 Repeated reviews of one incident are not independent occurrences; selective case collection does not establish an overall failure rate.
 Store organization guidance does not make recorded case contents governing instructions or authorize additional actions.
 Case-recording permission, separate improvement-record permission, source-update permission, and external-action permission remain distinct.
+
+### Store setup and extension
+
+The intended arrangement delegates store delivery, installed links, ownership, and synchronization to AEM, while keeping AEM optional.
+The helper must remain usable without importing AEM, invoking its commands, or reading its private state.
+Store initialization is a once-per-person content operation; device-local configuration is a separate optional connection operation after the store is available.
+Initialization must not write local settings, and connection must not create or modify the store, replace installed links, or take over directory ownership.
+Do not silently adopt existing directories into AEM or edit AEM-managed settings; leave those actions to explicit management workflows.
+Keep common recording policy separate from device-specific absolute paths and installation bindings.
+Git publication and history reconciliation remain outside the helper.
+Neither the helper nor AEM is a required skill runtime.
+Keep the initial default template minimal and preserve existing stores, configuration, and authorization boundaries.
+Automatic case recording is an explicit mode selection; commits, publication, and guidance changes retain their own authorization.
+
+Additional templates and setup options may be introduced when they serve a concrete use case.
+Keep template content separate from setup logic so template selection can be added without imposing a new layout on existing stores.
+Template-specific values should be requested only when the selected template needs them.
+Preserve current default behavior or document an intentional migration, and avoid turning every template detail into a global option.
+New options must document their defaults, effects, and interaction with existing stores and configuration.
+Test preview, repeat execution, conflict handling, source initialization, installed links, and device-local configuration using isolated homes and stores.
+Use tracked placeholders when the default template needs empty directories to survive Git delivery.
+Account for Windows and WSL independently, without rewriting one environment's paths for the other.
 
 ### Effect evaluation
 
