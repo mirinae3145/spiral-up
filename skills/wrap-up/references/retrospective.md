@@ -35,7 +35,8 @@ An applied change, a passing check, or a successful task alone does not demonstr
 Use available task evidence without starting a separate investigation merely to evaluate a prior change.
 
 For material findings, retain the observed behavior, its impact, relevant evidence or source references, and a concrete proposed improvement or next observation.
-These findings can support Tune Up or another later guidance review; do not automatically invoke an update or make closeout depend on that skill.
+For an open question, identify a useful observation opportunity, such as the next comparable task that uses the changed guidance, rather than requiring a date or evaluation plan.
+These findings can support Follow Up, Tune Up, or another later review; do not automatically invoke those skills or make closeout depend on them.
 Keep findings in the summary unless case recording is authorized; recording follows [Case accumulation](case-accumulation.md) and does not authorize guidance changes or separate improvement records.
 
 If missing history could affect a material retrospective conclusion, read [Session recovery](session-recovery.md) and attempt a bounded recovery of the relevant local records.

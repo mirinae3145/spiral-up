@@ -2,13 +2,17 @@
 
 > Wrap up the workflow.
 > Tune up the guidance.
+> Follow up on what changed.
 
-Spiral Up brings together two agent skills for task closeout and guidance improvement.
+Spiral Up brings together three independently usable agent skills that connect task experience, guidance improvements, and later evidence.
 
 [Wrap Up](skills/wrap-up/SKILL.md) closes a task by checking the final state, verifying results, and capturing useful observations about guidance and workflow.
-[Tune Up](skills/tune-up/SKILL.md) helps improve agent instructions and skills from accumulated cases or direct requests, and assess earlier changes using later evidence.
+[Tune Up](skills/tune-up/SKILL.md) improves agent instructions and skills from accumulated cases or direct requests.
+[Follow Up](skills/follow-up/SKILL.md) picks up work left for later, including tracking observation questions and assessing the effects of earlier changes, or resuming a general handoff.
 
-Observations from one task can inform guidance for the next, whose results provide evidence for further review.
+A typical loop is **Wrap Up &rightarrow; Tune Up &rightarrow; Follow Up &rightarrow; Wrap Up**: retain observations, improve guidance, follow up on the expected effects, and capture what the follow-up work taught us.
+Enter wherever the task needs it; each skill accepts other inputs and can finish without invoking the next skill or requiring the whole loop.
+Their roles overlap naturally: closeout can reveal evidence about an earlier change, and a guidance review can assess that evidence directly.
 
 ## Wrap up the workflow
 
@@ -33,15 +37,35 @@ Example requests:
 - "Create a skill for this recurring review task."
 - "Assess whether the earlier guidance change helped in these later cases."
 
-Wrap Up can capture later observations for Tune Up to reassess an improvement.
+Leave the expected effect and a useful next observation with the improvement so later work can assess it.
 An applied change and evidence that it helped are separate outcomes.
 AEM is optional and can help Tune Up locate managed sources; installation and publication require their own authorization.
+
+## Follow up on earlier work
+
+Ask Follow Up to revisit an observation question, assess an earlier improvement, or resume a task from a handoff, closeout summary, or prior work record.
+It recovers the relevant context, checks the current evidence, and carries out the requested follow-up.
+For an improvement, it checks whether the changed guidance was actually used, what happened, and whether the expected effect is supported, challenged, or still uncertain.
+If there has been no relevant observation opportunity, it leaves the question open with a useful condition for checking again.
+For a general handoff, it chooses a useful restart point and continues within the requested objective; you can also ask for preparation without execution.
+
+Example requests:
+
+- "Find the observation questions left with this improvement and assess what these later tasks show."
+- "Check whether the revised guidance reduced repeated confirmations, including any new friction."
+- "Continue the task from this handoff and finish the remaining work."
+- "Read this handoff and identify the restart point without making changes."
+
+Follow-up findings can inform another guidance review and be retained during closeout.
+Evaluating a change does not automatically apply another one, schedule monitoring, or invoke the other skills.
+No fixed record format, evaluation score, or observation schedule is required.
+To use a package that is not installed, ask the agent to read its `SKILL.md` directly; catalog registration and installation are separate operations.
 
 ## Record cases (optional)
 
 Useful findings can stay in the closeout summary or be saved for later review.
 The default personal store is `agent-loop` under the current environment's user home.
-Both skills follow the selected store's existing organization.
+All three skills follow the selected store's existing organization.
 
 Authorize case recording in your request or guidance, or configure `.config/agent-loop/config.toml` under that home:
 
@@ -58,7 +82,8 @@ Use `automatic` to record material cases, `proposals` to review candidate entrie
 Set `root` to an absolute path valid in your environment; Windows and WSL may use different homes and stores.
 On Windows, use a TOML literal string for paths containing backslashes.
 Recording cases does not authorize guidance changes or separate improvement records.
-If the selected store is unavailable, closeout continues with the findings in the summary.
+If the selected store is unavailable, retain available findings in the response and report any gaps that limit the requested review.
+Follow-up evidence can be appended to an existing case within its recording authorization; preserve the original account and link the earlier change when available.
 
 ### Initialize once, connect each device
 
@@ -107,7 +132,7 @@ Both commands support `--dry-run` without writes.
 `configure --check` validates the existing configuration and store directory; it does not guarantee later write access or evaluate record content.
 An interrupted setup may leave files already created; inspect that partial state before retrying.
 The helper does not initialize Git, authorize commits, install skills, modify catalogs, or publish anything.
-Both skills remain independently usable without the helper or AEM.
+All three skills remain independently usable without the helper or AEM.
 
 See [Case accumulation](skills/wrap-up/references/case-accumulation.md) for storage, evidence, and authorization details.
 

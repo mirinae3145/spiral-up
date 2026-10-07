@@ -6,6 +6,7 @@ Keep material incidents and useful outcomes here for later guidance review.
 - `evidence/`: the minimum supporting material needed to assess a case.
 
 Search for related records before writing and append follow-ups to the same incident.
+Link an earlier improvement when relevant, retaining its expected effect, later evidence, and any still-open observation question.
 Preserve original observations, distinguish evidence from interpretations, and omit secrets and unnecessary private details.
 Recording authorization comes from the user's request, applicable guidance, or personal recording configuration.
 This template grants no additional permission for commits, publication, or guidance changes.

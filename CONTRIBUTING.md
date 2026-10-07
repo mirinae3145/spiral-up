@@ -1,6 +1,6 @@
 # Contributing
 
-This guide covers development of the Wrap Up and Tune Up skills for human contributors and AI agents.
+This guide covers development of the Wrap Up, Tune Up, and Follow Up skills for human contributors and AI agents.
 See the [README](README.md) for user-facing behavior and setup.
 Execution rules belong in each skill's `SKILL.md` and its linked references; this guide records the design boundaries and contribution practices that changes must preserve.
 
@@ -20,8 +20,16 @@ Optional skill-authoring validators may have their own dependencies.
 Wrap Up closes the user's task, evaluates adherence and workflow feedback, and captures material observations for later improvement, optionally recording cases.
 Those observations can include useful outcomes, friction, and evidence about earlier guidance changes without requiring a separate improvement investigation.
 Tune Up evaluates cases or direct improvement requests, updates instructions and skills within authorization, and connects changes to subsequent evidence.
+Follow Up revisits observation questions and earlier changes, connects them to current evidence, and assesses effects or identifies a further observation opportunity.
+It also recovers general handed-off task context, reconciles it with the current state, and prepares or executes continuation according to the user's request.
+Handoff suggestions do not expand the task objective or grant new authorization.
 Keep closeout separate from applying guidance improvements: recording a recommendation during wrap-up must not automatically invoke an update.
-Descriptions must keep ordinary code work, closeout, and guidance improvement distinguishable for skill selection.
+Descriptions must make closeout, follow-up assessment or resumption, and guidance improvement discoverable without attracting ordinary code work that has no such purpose.
+
+Wrap Up &rightarrow; Tune Up &rightarrow; Follow Up &rightarrow; Wrap Up is a representative feedback loop, not a mandatory execution sequence.
+Support direct entry and completion at any skill, mixed requests, and observations arising during ordinary work.
+These responsibilities are emphases, not exclusive ownership: Wrap Up may notice effects of earlier guidance, and Tune Up may reassess them directly.
+Keep the connections useful without requiring loop modes, automatic sibling invocation, or a shared runtime.
 
 The skills share a repository but are independently installable and usable.
 Each package must contain its required execution instructions and references without relying on sibling skills or repository-root documents being installed.
@@ -88,6 +96,8 @@ Account for Windows and WSL independently, without rewriting one environment's p
 Keep proposals, applied source changes, installed changes, and observed effects distinguishable.
 A passing structure check or edited file does not demonstrate improved behavior.
 Later assessments should establish whether the changed guidance was actually used, consider counterexamples and new friction, and retain uncertainty when exposure or causality is unknown.
+Retain the expected effect, relevant evidence, and a useful next observation condition when available, without imposing a fixed evaluation score, schedule, or record schema.
+An absent observation opportunity leaves an assessment open; it does not demonstrate either success or failure.
 Support follow-up observations without implicitly creating background monitoring, schedules, or experiments.
 
 ## Editing and documentation
@@ -107,6 +117,7 @@ There is no repository-owned automated behavioral suite; do not present manual s
 
 - For changed skill instructions, use an available skill validator to check frontmatter, naming, and unfinished scaffold content.
   When `skill-creator` is available, locate its `scripts/quick_validate.py`, set `skill_validator` to that path, and run `python3 "$skill_validator" skills/wrap-up` or `python3 "$skill_validator" skills/tune-up` for the affected package.
+  For Follow Up, use `skills/follow-up` as the package path.
   That validator needs Python 3 and PyYAML; report unavailable tooling rather than claiming the check passed.
 - Check local Markdown links and confirm required skill references resolve within each package independently of sibling or repository-root files.
 - Run `git diff --check`, and `git diff --cached --check` when staging a contribution.
@@ -115,6 +126,7 @@ There is no repository-owned automated behavioral suite; do not present manual s
 
 Relevant scenarios include finish versus handoff requests, optional case-recording authorization and unavailable stores, case-derived versus direct updates, analysis-only versus application requests, new rules or skills, and AEM available, absent, or failing source discovery.
 For storage or assessment changes, include alternate layouts, duplicate incidents, counterexamples, unknown guidance versions, and uncertain exposure to a prior change.
+For Follow Up, include an observation question with no handoff, no relevant observation opportunity, preparation without execution, and a handoff superseded by current artifacts.
 Select the scenarios affected by the contribution; documentation-only changes do not require re-running unrelated behavior checks.
 Use isolated fixtures for execution tests so they do not alter real stores, instructions, installations, or external state.
 

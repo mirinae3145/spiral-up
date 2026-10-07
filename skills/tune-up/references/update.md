@@ -59,6 +59,8 @@ Verify completed results rather than treating queued operations or previews as s
 When only source editing is requested, report installation and distribution status without performing those additional operations.
 
 Define a proportionate follow-up observation, such as whether a later task used the changed guidance and avoided the original friction without introducing another problem.
+Connect it to the expected effect, the affected source and known version, and a situation in which it can be checked when those are available.
+Keep an unanswered question open when no relevant observation opportunity has occurred; a direct request need not invent supporting cases or a formal evaluation plan.
 Do not create monitoring, scheduled work, or experiments merely to provide that observation.
 
 ## Resolve records and retain results

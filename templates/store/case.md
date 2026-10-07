@@ -14,4 +14,6 @@ Describe the current state, distinguish confirmed facts from hypotheses, and sta
 
 ## Follow-up
 
-Identify a useful next observation and append dated findings without replacing the original account.
+Identify a useful next observation and the situation in which it could be made.
+When relevant, link the earlier change and its expected effect.
+Append dated findings without replacing the original account, including what remains uncertain or unobserved.

@@ -13,6 +13,7 @@ description: >
 Improve instructions and skills within the user's requested outcome.
 Accept accumulated cases, selected observations, direct change requests, or follow-up evidence about an earlier improvement.
 Case analysis is one entry path; a direct request does not need supporting cases or repeated incidents before work can proceed.
+In a feedback loop, turn observations into a justified improvement and leave a question for later follow-up; direct requests and reassessments use the same improvement path.
 
 ## Route the input
 
@@ -42,4 +43,5 @@ Recording, applying a change, deploying it, and evaluating its effect are separa
 Lead with the decision or resulting behavior and identify the relevant source, changes, checks, and remaining uncertainty.
 Link cases and improvement records when available; otherwise keep enough context in the response to support later work.
 Distinguish a proposal, an applied source change, an installed or distributed change, and an observed effect.
-State the next observation that could confirm, weaken, or revise the improvement, without claiming that an edited file proves effectiveness.
+State the expected effect and the next observation that could confirm, weaken, or revise the improvement, including a useful observation opportunity when known.
+These can support Follow Up or another later review without requiring that skill or automatically starting it; an edited file does not prove effectiveness.
