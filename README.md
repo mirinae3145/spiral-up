@@ -2,7 +2,7 @@
 
 > Wrap up the workflow.
 > Tune up the guidance.
-> Follow up on what changed.
+> Follow up the handoff.
 
 Spiral Up brings together three independently usable agent skills that connect task experience, guidance improvements, and later evidence.
 
@@ -41,7 +41,7 @@ Leave the expected effect and a useful next observation with the improvement so 
 An applied change and evidence that it helped are separate outcomes.
 AEM is optional and can help Tune Up locate managed sources; installation and publication require their own authorization.
 
-## Follow up on earlier work
+## Follow up the handoff
 
 Ask Follow Up to revisit an observation question, assess an earlier improvement, or resume a task from a handoff, closeout summary, or prior work record.
 It recovers the relevant context, checks the current evidence, and carries out the requested follow-up.
