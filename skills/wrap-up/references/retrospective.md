@@ -13,6 +13,13 @@ Two independent judgments:
   Look at user corrections, failed approaches, and avoidable rework: e.g. conflicting or misleading wording, docs vs. actual behavior, repeated exception requests, failed tool calls, redundant checks or confirmations.
   Also consider guidance or working methods that helped when their observed contribution is useful to preserve or compare; routine success alone is not a finding.
 
+Review guidance loading as part of workflow feedback: distinguish guidance that did not need to be loaded for the task from guidance that was appropriately loaded but brought excessive unrelated context with it.
+Judge necessity against the task, applicability conditions, explicit reading requirements, and uncertainty at the time; length or lack of eventual use alone does not establish unnecessary loading.
+For material findings, identify the source, how it was selected or reached, the unnecessary scope, observed impact, and a concrete improvement.
+Consider applicability and reference-following criteria for unnecessary loads, and document organization or progressive disclosure for excessive context in an appropriate load.
+Treat a breach of an explicit loading constraint as an adherence finding as well.
+Use existing task evidence rather than reloading all guidance solely for this review.
+
 For each confirmed adherence violation, determine whether its effects or the noncompliant condition remain in the current artifacts or workflow.
 When a violation remains unresolved, proactively propose a concrete corrective action by default, regardless of the requested emphasis; merely noting the violation or promising greater care is insufficient.
 Identify the applicable requirement, the affected artifact or practice, what should change, and how resolution can be verified, with detail proportional to the issue.
