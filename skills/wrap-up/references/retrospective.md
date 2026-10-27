@@ -28,7 +28,8 @@ Keep these proposals within the existing scope and authorization rules; proposin
 
 Before concluding there is no material feedback, look for useful improvements to the guidance or working method in those observations, even when instructions were followed; propose a concrete change when the evidence supports one.
 Keep routine review brief; expand for material findings.
-Make material findings actionable with the relevant source, observed behavior and impact, and a concrete improvement.
+Describe material findings with the relevant source, observed behavior, impact, and recovery.
+Add a concrete improvement only when the evidence supports a useful change beyond the correction already made; a finding does not need a prescription to be worth retaining.
 Explain the cause when supported; otherwise state the uncertainty.
 Separate observations from hypotheses; one failure is not a new rule, and no self-blame or "will be more careful".
 Report material findings and improvement proposals to the user as part of the retrospective; this reporting does not require separate approval.
@@ -41,8 +42,11 @@ Include counterexamples or new friction when present; state when exposure, versi
 An applied change, a passing check, or a successful task alone does not demonstrate that the guidance improved behavior.
 Use available task evidence without starting a separate investigation merely to evaluate a prior change.
 
-For material findings, retain the observed behavior, its impact, relevant evidence or source references, and a concrete proposed improvement or next observation.
-For an open question, identify a useful observation opportunity, such as the next comparable task that uses the changed guidance, rather than requiring a date or evaluation plan.
+Retain material observations as evidence for later comparison without requiring each incident to yield a lesson, proposed rule, or future check.
+Distinguish a correction completed in this task from a change worth proposing for future work.
+Do not turn a resolved local mistake into a checklist for an imagined repeat of the same task; broader lessons may emerge from later Tune Up analysis.
+Leave a next observation only when an unresolved question matters to a later decision and a plausible observation opportunity can be identified.
+If no such opportunity is known, state that limit only when material; do not manufacture a "next similar task" commitment or keep an otherwise resolved incident open for it.
 These findings can support Follow Up, Tune Up, or another later review; do not automatically invoke those skills or make closeout depend on them.
 Keep findings in the summary unless case recording is authorized; recording follows [Case accumulation](case-accumulation.md) and does not authorize guidance changes or separate improvement records.
 

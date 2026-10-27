@@ -97,6 +97,7 @@ Include material changes, validation and its limits, and remaining decisions or 
 Choose the structure and level of detail for the task and the user's request; this skill prescribes no fixed headings, order, table, or template.
 Keep adherence findings and workflow feedback distinguishable from task completion without requiring separate sections or unsupported blanket compliance claims.
 For material improvement findings, preserve enough evidence and source context for a later guidance review without requiring a separate record or repeating the conversation.
-When a question remains open, retain what would be useful to observe next and the situation in which that observation could be made, so later follow-up has a concrete starting point.
+For a material open question with a plausible observation opportunity, retain what would help resolve it and where that evidence could arise.
+A resolved incident does not require a future lesson or observation commitment; follow the selection criteria in the retrospective and case-recording references.
 When a handoff document exists, link it and include enough context for the final response to stand on its own without repeating the document.
 For work that will continue, preserve consequential decisions and a clear starting point for the next session or colleague.

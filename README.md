@@ -64,6 +64,8 @@ To use a package that is not installed, ask the agent to read its `SKILL.md` dir
 ## Record cases (optional)
 
 Useful findings can stay in the closeout summary or be saved for later review.
+Select cases for their evidence value, such as consequential incidents or informative patterns, rather than recording every corrected retry.
+A case can preserve observations and recovery without prescribing a future lesson or promising a repeat-task check; later guidance review can compare the accumulated evidence.
 The default personal store is `agent-loop` under the current environment's user home.
 All three skills follow the selected store's existing organization.
 

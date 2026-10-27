@@ -25,6 +25,19 @@ For `proposals`, present candidate entries without writing; for `disabled`, skip
 Without recording authorization, leave useful findings in the summary.
 Recording does not authorize instruction changes, external feedback, task-tracker updates, or Git commits and pushes.
 
+## Select what merits a case
+
+Judge retention value before drafting a lesson or searching for a future observation opportunity.
+Retain an incident when its impact, unresolved consequence, evidence of a recurring or transferable problem, or informative outcome makes it useful for later assessment.
+A consequential one-off failure can merit a record even when recurrence is unlikely or no improvement is yet justified.
+Ordinary corrected tool errors, local setup discoveries, and minor implementation retries usually belong only in task context when needed to explain the result or resume work.
+The ability to write "next time, check X first" does not establish case value.
+
+Record the observation, impact, evidence, and recovery at the detail needed for later interpretation.
+A case may end there: do not invent a lesson, recommendation, or observation obligation to fill a template.
+Preserve important evidence for later comparison; generalizing accumulated cases belongs to a later guidance review when warranted.
+Explicit user requests to retain an incident still apply.
+
 ## Inspect and place records
 
 Before choosing a record path, inspect the selected store's README, contribution guidance, case templates, and directory structure when present.
