@@ -17,6 +17,10 @@ If the user asks only to summarize, hand off, or stop at the current state, repo
 If the user asks to finish the task, complete necessary work within the already authorized objective before closing out.
 Anything outside that objective becomes a **follow-up** in the summary, not an edit.
 
+Decide separately what to report to the user and what to persist in documents or other records.
+Information needed in the closeout response does not automatically need to be recorded.
+Follow applicable guidance provided when making recording decisions.
+
 **Scope**: the whole task, or for an orchestrator the integrated result. A
 worker in a larger task closes only its own slice and leaves other workers'
 files, repo-wide cleanup, and the "done" call to the orchestrator.
