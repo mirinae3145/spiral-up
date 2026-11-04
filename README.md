@@ -12,11 +12,15 @@ Choose a skill for the work at hand:
 - [Tune Up](skills/tune-up/SKILL.md) improves agent instructions and skills from accumulated cases or direct requests.
 - [Follow Up](skills/follow-up/SKILL.md) picks up work left for later, including tracking observation questions, assessing earlier changes, and resuming a general handoff.
 
-A typical loop is **Wrap Up &rightarrow; Tune Up &rightarrow; Follow Up &rightarrow; Wrap Up**: retain observations, improve guidance, follow up on the expected effects, and capture what the follow-up work taught us.
-Enter wherever the task needs it; each skill accepts other inputs and can finish without invoking the next skill or requiring the whole loop.
-Their roles overlap naturally: closeout can reveal evidence about an earlier change, and a guidance review can assess that evidence directly.
+A typical loop is **Wrap Up &rightarrow; Tune Up &rightarrow; Follow Up &rightarrow; Wrap Up**.
+Retain observations, improve guidance, assess the effects, and capture what the follow-up work taught us.
+Enter wherever the task needs it.
+Each skill accepts other inputs and can finish without invoking the next skill or requiring the whole loop.
 
-To use a package that is not installed, ask the agent to read its `SKILL.md` directly; catalog registration and installation are separate operations.
+The skills' roles can overlap.
+Closeout can reveal evidence about an earlier change, and a guidance review can assess that evidence directly.
+To use a package that is not installed, ask the agent to read its `SKILL.md` directly.
+Catalog registration and installation are separate operations.
 
 ## Wrap up the workflow
 
@@ -32,7 +36,8 @@ Example requests:
 ## Tune up the guidance
 
 Ask Tune Up to improve instructions or skills, review accumulated cases, or assess an earlier change.
-It can edit, add, consolidate, or remove guidance; direct requests do not require prior case collection.
+It can edit, add, consolidate, or remove guidance.
+Direct requests do not require prior case collection.
 You can ask for a proposal before applying changes.
 
 Example requests:
@@ -41,17 +46,24 @@ Example requests:
 - "Create a skill for this recurring review task."
 - "Assess whether the earlier guidance change helped in these later cases."
 
-Leave the expected effect and a useful next observation with the improvement so later work can assess it.
+Describe the improvement's expected effect and a useful next observation so later work can assess it.
 An applied change and evidence that it helped are separate outcomes.
-AEM is optional and can help Tune Up locate managed sources; installation and publication require their own authorization.
+AEM is optional and can help Tune Up locate managed sources.
+Installation and publication require their own authorization.
 
 ## Follow up the handoff
 
-Ask Follow Up to revisit an observation question, assess an earlier improvement, or resume a task from a handoff, closeout summary, or prior work record.
+Ask Follow Up to revisit an observation question, assess an earlier improvement, or resume handed-off work.
+It accepts handoffs, closeout summaries, and other prior work records.
 It recovers the relevant context, checks the current evidence, and carries out the requested follow-up.
-For an improvement, it checks whether the changed guidance was actually used, what happened, and whether the expected effect is supported, challenged, or still uncertain.
-If there has been no relevant observation opportunity, it leaves the question open with a useful condition for checking again.
-For a general handoff, it chooses a useful restart point and continues within the requested objective; you can also ask for preparation without execution.
+
+The follow-up procedure depends on the question or work being revisited:
+
+- **Earlier improvements**: It checks whether the changed guidance was actually used and what happened.
+  It assesses whether the evidence supports or challenges the expected effect, or leaves it uncertain.
+  Without a relevant observation opportunity, it leaves the question open with a useful condition for checking again.
+- **General handoffs**: It chooses a useful restart point and continues within the requested objective.
+  You can also ask for preparation without execution.
 
 Example requests:
 
@@ -68,7 +80,8 @@ No fixed record format, evaluation score, or observation schedule is required.
 
 Useful findings can stay in the closeout summary or be saved for later review.
 Select cases for their evidence value, such as consequential incidents or informative patterns, rather than recording every corrected retry.
-A case can preserve observations and recovery without prescribing a future lesson or promising a repeat-task check; later guidance review can compare the accumulated evidence.
+A case can preserve observations and recovery without prescribing a future lesson or promising to check a repeat task.
+Later guidance review can compare the accumulated evidence.
 
 The default personal store is `agent-loop` under the current environment's user home.
 All three skills follow the selected store's existing organization.
@@ -85,4 +98,5 @@ See [Contributing](CONTRIBUTING.md) for development setup, validation, and submi
 ## AI disclosure
 
 These skills are developed with AI assistance and intended for use by AI agents.
-Reviews and cause analyses may be incomplete or mistaken; case records retain evidence for later evaluation.
+Reviews and cause analyses may be incomplete or mistaken.
+Case records retain evidence for later evaluation.

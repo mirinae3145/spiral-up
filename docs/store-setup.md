@@ -2,7 +2,7 @@
 
 This guide explains how to authorize optional case recording, initialize a shared source store, and connect an existing store on each device.
 The setup helper requires a checkout of this repository and Python 3.11 or later.
-Run its commands from the repository root; use `python3` if that is your Python command.
+Run its commands from the repository root, using `python3` if that is your Python command.
 
 ## Recording settings
 
@@ -25,22 +25,29 @@ Choose the recording mode for the intended level of authorization:
 | `proposals` | Review candidate entries without writes. |
 | `disabled` | Skip recording. |
 
-Set `root` to an absolute path valid in your environment; Windows and WSL may use different homes and stores.
+Set `root` to an absolute path valid in your environment.
+Windows and WSL may use different homes and stores.
 On Windows, use a TOML literal string for paths containing backslashes.
 
 Recording cases does not authorize guidance changes or separate improvement records.
 If the selected store is unavailable, retain available findings in the response and report any gaps that limit the requested review.
-Follow-up evidence can be appended to an existing case within its recording authorization; preserve the original account and link the earlier change when available.
+You can append follow-up evidence within the case's recording authorization.
+Preserve the original account.
+Link the earlier change when available.
 
 ## Store delivery
 
 The intended arrangement uses AEM to deliver the personal store and manage its installed directory link across devices.
-The helper initializes store content and optionally connects local recording settings; it does not own directory delivery, AEM state, or synchronization.
-AEM is not a runtime dependency: independently prepared or synchronized stores work with the same commands.
+The helper initializes store content and optionally connects local recording settings.
+It does not own directory delivery, AEM state, or synchronization.
+AEM is not a runtime dependency.
+Independently prepared or synchronized stores work with the same commands.
 
 ## Initialize the source store
 
-Initialize the source store once per person, before distributing it:
+Initialize the source store once per person, before distributing it.
+Choose the source path explicitly; do not initialize content at a path AEM will later install as a link.
+Preview the operation before applying it:
 
 ```bash
 python scripts/setup_store.py init --root /absolute/source-store --dry-run
@@ -52,14 +59,14 @@ An absent or empty directory, including a checkout containing only `.git`, recei
 Other nonempty stores retain their existing organization.
 No device-local configuration is read or written.
 
-Choose the source store path explicitly rather than creating content at a path AEM will later install as a link.
 Commit and distribute the initialized source through your chosen management workflow.
 
 ## Connect each device
 
-On each device, first install/connect the existing store through AEM or your independent workflow.
-For stores receiving local records through AEM directory management, use a link; edits to installed copies are not collected into the source.
-Then, if local recording configuration is needed, preview and connect it:
+On each device, first connect the existing store through AEM installation or your independent workflow.
+For stores receiving local records through AEM directory management, use a link.
+Edits to installed copies are not collected into the source.
+If local recording configuration is needed, preview and connect it:
 
 ```bash
 python scripts/setup_store.py configure --root /absolute/installed-store --mode automatic --dry-run
@@ -67,23 +74,36 @@ python scripts/setup_store.py configure --root /absolute/installed-store --mode 
 python scripts/setup_store.py configure --check
 ```
 
-`configure` requires an existing store, accepts installed directory links, and never changes store contents or creates the store.
+`configure` requires an existing store and accepts installed directory links.
+It never changes store contents or creates the store.
 It writes `.config/agent-loop/config.toml` under the current environment's home.
-Without `--root`, it uses the existing configured path or `~/agent-loop`; without `--mode`, it keeps the existing mode or uses `proposals` for a new configuration.
 Selecting `automatic` authorizes material personal case records and necessary evidence across tasks, subject to explicit user instructions.
 
-Existing configuration is validated and preserved; conflicting requested values require an explicit edit through its governing owner.
+Omitted options use these defaults:
+
+| Option | Existing configuration | New configuration |
+| --- | --- | --- |
+| `--root` | Keep the configured store path. | Use `~/agent-loop`. |
+| `--mode` | Keep the configured recording mode. | Use `proposals`. |
+
+Existing configuration is validated and preserved.
+Conflicting requested values require an explicit edit through the configuration's governing owner.
 If AEM settings already manage that file, use the AEM settings workflow for changes rather than this helper.
 
-Store delivery does not deliver this separate local configuration.
-Common recording policy can come from personal guidance or selected AEM-managed settings; absolute store paths and target bindings remain device-specific.
+Store delivery does not include this separate local configuration.
 If applicable guidance already authorizes recording at the default store, local configuration may be unnecessary.
-Git transport still requires authorized publication; concurrent histories require explicit reconciliation rather than automatic merging by this helper.
+Common recording policy can come from personal guidance or selected AEM-managed settings.
+Absolute store paths and target bindings remain device-specific.
 
 ## Check setup and recover interruptions
 
 Both commands support `--dry-run` without writes.
-`configure --check` validates the existing configuration and store directory; it does not guarantee later write access or evaluate record content.
-An interrupted setup may leave files already created; inspect that partial state before retrying.
+`configure --check` validates the existing configuration and store directory.
+It does not guarantee later write access or evaluate record content.
+An interrupted setup may leave files already created.
+Inspect that partial state before retrying.
+
 The helper does not initialize Git, authorize commits, install skills, modify catalogs, or publish anything.
+Git transport requires authorized publication.
+Concurrent histories require explicit reconciliation; the helper does not merge them automatically.
 All three skills remain independently usable without the helper or AEM.

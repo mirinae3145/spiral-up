@@ -11,8 +11,9 @@ description: >
 
 Close out the task according to the user's requested outcome.
 Leave a verified result or a resumable handoff, along with material observations that can inform the next task's guidance.
-These observations can feed a guidance improvement and later follow-up, whose findings can be captured in another closeout; the same closeout procedure also serves ordinary sessions.
-Review instruction adherence and workflow feedback as evidence for later improvement; closeout does not itself apply guidance changes or require case recording or Tune Up to be installed.
+Use observations about instruction adherence and workflow to inform later improvements.
+A later closeout can capture follow-up findings; ordinary sessions use the same procedure.
+Closeout does not itself apply guidance changes or require case recording or an installed Tune Up skill.
 
 ## Scope and requested outcome
 
@@ -21,11 +22,12 @@ If the user asks to finish the task, complete necessary work within the already 
 Anything outside that objective becomes a **follow-up** in the summary, not an edit.
 
 Decide separately what to report to the user and what to persist in documents or other records.
-Information needed in the closeout response does not automatically need to be recorded.
-Follow applicable guidance provided when making recording decisions.
+A finding may belong in the response without needing a persistent record.
+Follow applicable guidance when deciding what to record.
 
-Close out the whole task, or for an orchestrator the integrated result.
-A worker in a larger task closes only its own slice and leaves other workers' files, repo-wide cleanup, and the "done" call to the orchestrator.
+Close out the whole task, or the integrated result when acting as an orchestrator.
+A worker in a larger task closes only its own slice.
+As a worker, leave other workers' files, repository-wide cleanup, and the final completion decision to the orchestrator.
 
 ## Requested emphasis
 
@@ -33,10 +35,10 @@ Accept natural-language emphasis in the invocation, such as focusing on instruct
 Treat it as a priority for additional review depth and explanation, without requiring a named mode or fixed vocabulary.
 Preserve all applicable closeout steps and completion criteria; emphasis does not expand the task's scope or authorization.
 
-Keep review coverage distinct from reporting length: areas outside the emphasis still receive the necessary checks and may be reported briefly when uneventful.
-Address material findings and unfinished work regardless of the requested emphasis.
-Keep emphasis separate from the [requested outcome](#scope-and-requested-outcome): a focus on handoff quality alone does not mean stopping implementation or switching to a summary-only handoff.
-When no emphasis is given, use the task's evidence and risks to allocate attention across the normal flow.
+Check areas outside the requested emphasis too; report them briefly when uneventful.
+Address material findings and unfinished work regardless of emphasis.
+A focus on handoff quality alone does not change the [requested outcome](#scope-and-requested-outcome) to stopping implementation or providing only a summary.
+When no emphasis is given, allocate attention according to the task's evidence and risks.
 
 ## Closeout procedure
 
@@ -57,13 +59,16 @@ Reuse established recording authorization within its scope; otherwise leave cand
 ## Closeout summary
 
 Make the final response self-contained and lead with the outcome most relevant to the user.
-Include material changes, validation and its limits, and remaining decisions or work as relevant to understanding the result or continuing the task.
-Choose the structure and level of detail for the task and the user's request; this skill prescribes no fixed headings, order, table, or template.
-Keep adherence findings and workflow feedback distinguishable from task completion without requiring separate sections or unsupported blanket compliance claims.
+Include the material changes, validation results and limits, and remaining decisions or work needed to understand the result or continue the task.
+Choose the structure and detail for the task and the user's request; no fixed headings, order, table, or template are required.
+Distinguish adherence findings and workflow feedback from task completion.
+Separate sections are optional; do not make unsupported claims of complete compliance.
 
-For material improvement findings, preserve enough evidence and source context for a later guidance review without requiring a separate record or repeating the conversation.
-For a material open question with a plausible observation opportunity, retain what would help resolve it and where that evidence could arise.
-A resolved incident does not require a future lesson or observation commitment; follow the selection criteria in the retrospective and case-recording references.
+For material improvement findings, retain enough evidence and source context for a later guidance review.
+No separate record is required, and there is no need to repeat the conversation.
+For a material open question with a plausible observation opportunity, retain what could resolve it and where that evidence could arise.
+A resolved incident requires no future lesson or observation commitment; follow the selection criteria in the retrospective and case-recording references.
 
-When a handoff document exists, link it and include enough context for the final response to stand on its own without repeating the document.
+When a handoff document exists, link it.
+Give enough context for the response to stand on its own without repeating the document.
 For work that will continue, preserve consequential decisions and a clear starting point for the next session or colleague.

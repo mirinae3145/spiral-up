@@ -14,15 +14,23 @@ Make two independent judgments:
   Record material violations even if later corrected, with the recovery.
   Judge from observed actions, not the final result.
 - **Workflow feedback** &mdash; did the guidance and tools support the work?
-  Look at user corrections, failed approaches, and avoidable rework: for example, conflicting or misleading wording, docs vs. actual behavior, repeated exception requests, failed tool calls, redundant checks or confirmations.
-  Also consider guidance or working methods that helped when their observed contribution is useful to preserve or compare; routine success alone is not a finding.
+  Review user corrections, failed approaches, and avoidable rework.
+  Examples include misleading or conflicting wording, documentation that differs from behavior, repeated exception requests, failed tool calls, and redundant checks or confirmations.
+  Also retain helpful guidance or working methods when their observed contribution is useful to preserve or compare.
+  Routine success alone is not a finding.
 
 ## Review guidance loading
 
-Review guidance loading as part of workflow feedback: distinguish guidance that did not need to be loaded for the task from guidance that was appropriately loaded but brought excessive unrelated context with it.
-Judge necessity against the task, applicability conditions, explicit reading requirements, and uncertainty at the time; length or lack of eventual use alone does not establish unnecessary loading.
+Review guidance loading as part of workflow feedback, distinguishing two problems:
+
+- **Unnecessary loading**: Guidance did not need to be loaded for the task.
+  Consider improving applicability and reference-following criteria.
+- **Excess context**: Guidance was appropriately loaded but brought excessive unrelated context.
+  Consider improving document organization or progressive disclosure.
+
+Judge necessity against the task, applicability conditions, explicit reading requirements, and uncertainty at the time.
+Length or lack of eventual use alone does not establish unnecessary loading.
 For material findings, identify the source, how it was selected or reached, the unnecessary scope, observed impact, and a concrete improvement.
-Consider applicability and reference-following criteria for unnecessary loads, and document organization or progressive disclosure for excessive context in an appropriate load.
 
 Treat a breach of an explicit loading constraint as an adherence finding as well.
 Use existing task evidence rather than reloading all guidance solely for this review.
@@ -30,39 +38,48 @@ Use existing task evidence rather than reloading all guidance solely for this re
 ## Resolve adherence findings
 
 For each confirmed adherence violation, determine whether its effects or the noncompliant condition remain in the current artifacts or workflow.
-When a violation remains unresolved, proactively propose a concrete corrective action by default, regardless of the requested emphasis; merely noting the violation or promising greater care is insufficient.
-Identify the applicable requirement, the affected artifact or practice, what should change, and how resolution can be verified, with detail proportional to the issue.
-Distinguish resolved violations from unresolved ones; when the current state cannot be established, state that uncertainty and the check needed rather than assuming resolution.
-Keep these proposals within the existing scope and authorization rules; proposing a correction does not itself authorize applying it.
+When a violation remains unresolved, proactively propose a concrete corrective action by default, regardless of the requested emphasis.
+Merely noting the violation or promising greater care is insufficient.
+Identify the applicable requirement, affected artifact or practice, proposed change, and verification, with detail proportional to the issue.
+
+Distinguish resolved violations from unresolved ones.
+If the current state is unknown, state the uncertainty and the check needed rather than assuming resolution.
+Keep proposals within existing scope and authorization rules; proposing a correction does not authorize applying it.
 
 ## Report material feedback
 
-Before concluding there is no material feedback, look for useful improvements to the guidance or working method in those observations, even when instructions were followed; propose a concrete change when the evidence supports one.
+Before concluding there is no material feedback, look for useful improvements to guidance or working methods, even when instructions were followed.
+Propose a concrete improvement when evidence supports a useful change beyond the correction already made.
+A finding can be worth retaining without a prescription.
 Keep routine review brief; expand for material findings.
 
 Describe material findings with the relevant source, observed behavior, impact, and recovery.
-Add a concrete improvement only when the evidence supports a useful change beyond the correction already made; a finding does not need a prescription to be worth retaining.
 Explain the cause when supported; otherwise state the uncertainty.
-Separate observations from hypotheses; one failure is not a new rule, and no self-blame or "will be more careful".
+Separate observations from hypotheses.
+One failure does not establish a new rule; avoid self-blame or promises to "be more careful".
 
-Report material findings and improvement proposals to the user as part of the retrospective; this reporting does not require separate approval.
-Applying proposed instruction changes or sending feedback to maintainers or other recipients requires the user's authorization for that action; reuse existing authorization when it covers the action.
+Report material findings and improvement proposals to the user as part of the retrospective; this reporting requires no separate approval.
+Applying instruction changes or sending feedback to maintainers or other recipients requires the user's authorization for that action.
+Reuse existing authorization when it covers the action.
 
 ## Observations for later improvement
 
-When this task provides relevant evidence about an earlier guidance change, identify the source and known version, whether the changed guidance was actually used, and the observed outcome.
-Include counterexamples or new friction when present; state when exposure, version, or causal contribution is unknown.
+When this task provides relevant evidence about an earlier guidance change, identify its source and known version.
+Establish whether the changed guidance was used and describe the observed outcome, including any counterexamples or new friction.
+State when exposure, version, or causal contribution is unknown.
 An applied change, a passing check, or a successful task alone does not demonstrate that the guidance improved behavior.
 Use available task evidence without starting a separate investigation merely to evaluate a prior change.
 
-Retain material observations as evidence for later comparison without requiring each incident to yield a lesson, proposed rule, or future check.
-Distinguish a correction completed in this task from a change worth proposing for future work.
-Do not turn a resolved local mistake into a checklist for an imagined repeat of the same task; broader lessons may emerge from later Tune Up analysis.
+Retain material observations for later comparison without requiring a lesson, proposed rule, or future check.
+Distinguish completed corrections from changes worth proposing; broader lessons may emerge from later Tune Up analysis.
+Do not turn a resolved local mistake into a checklist for an imagined repeat of the same task.
 Leave a next observation only when an unresolved question matters to a later decision and a plausible observation opportunity can be identified.
-If no such opportunity is known, state that limit only when material; do not manufacture a "next similar task" commitment or keep an otherwise resolved incident open for it.
+Without such an opportunity, state the limit when material without inventing a future commitment or keeping an otherwise resolved incident open.
 
-These findings can support Follow Up, Tune Up, or another later review; do not automatically invoke those skills or make closeout depend on them.
-Keep findings in the summary unless case recording is authorized; recording follows [Case accumulation](case-accumulation.md) and does not authorize guidance changes or separate improvement records.
+These findings can support Follow Up, Tune Up, or another later review.
+Do not automatically invoke those skills or make closeout depend on them.
+Keep findings in the summary unless case recording is authorized.
+Recording follows [Case accumulation](case-accumulation.md) and does not authorize guidance changes or separate improvement records.
 
 ## Recover missing evidence
 
