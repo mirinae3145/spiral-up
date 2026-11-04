@@ -1,18 +1,22 @@
 # Spiral Up Your Agent
 
+Spiral Up brings together three independently usable agent skills that connect task experience, guidance improvements, and later evidence.
+
 > Wrap up the workflow.
 > Tune up the guidance.
 > Follow up the handoff.
 
-Spiral Up brings together three independently usable agent skills that connect task experience, guidance improvements, and later evidence.
+Choose a skill for the work at hand:
 
-[Wrap Up](skills/wrap-up/SKILL.md) closes a task by checking the final state, verifying results, and capturing useful observations about guidance and workflow.
-[Tune Up](skills/tune-up/SKILL.md) improves agent instructions and skills from accumulated cases or direct requests.
-[Follow Up](skills/follow-up/SKILL.md) picks up work left for later, including tracking observation questions and assessing the effects of earlier changes, or resuming a general handoff.
+- [Wrap Up](skills/wrap-up/SKILL.md) closes a task by checking the final state, verifying results, and capturing useful observations about guidance and workflow.
+- [Tune Up](skills/tune-up/SKILL.md) improves agent instructions and skills from accumulated cases or direct requests.
+- [Follow Up](skills/follow-up/SKILL.md) picks up work left for later, including tracking observation questions, assessing earlier changes, and resuming a general handoff.
 
 A typical loop is **Wrap Up &rightarrow; Tune Up &rightarrow; Follow Up &rightarrow; Wrap Up**: retain observations, improve guidance, follow up on the expected effects, and capture what the follow-up work taught us.
 Enter wherever the task needs it; each skill accepts other inputs and can finish without invoking the next skill or requiring the whole loop.
 Their roles overlap naturally: closeout can reveal evidence about an earlier change, and a guidance review can assess that evidence directly.
+
+To use a package that is not installed, ask the agent to read its `SKILL.md` directly; catalog registration and installation are separate operations.
 
 ## Wrap up the workflow
 
@@ -59,88 +63,24 @@ Example requests:
 Follow-up findings can inform another guidance review and be retained during closeout.
 Evaluating a change does not automatically apply another one, schedule monitoring, or invoke the other skills.
 No fixed record format, evaluation score, or observation schedule is required.
-To use a package that is not installed, ask the agent to read its `SKILL.md` directly; catalog registration and installation are separate operations.
 
 ## Record cases (optional)
 
 Useful findings can stay in the closeout summary or be saved for later review.
 Select cases for their evidence value, such as consequential incidents or informative patterns, rather than recording every corrected retry.
 A case can preserve observations and recovery without prescribing a future lesson or promising a repeat-task check; later guidance review can compare the accumulated evidence.
+
 The default personal store is `agent-loop` under the current environment's user home.
 All three skills follow the selected store's existing organization.
+Authorize recording through your request, guidance, or local configuration.
 
-Authorize case recording in your request or guidance, or configure `.config/agent-loop/config.toml` under that home:
+[Personal case store setup](docs/store-setup.md) explains recording modes, source initialization, and connecting each device to an existing store.
+See [Case accumulation](skills/wrap-up/references/case-accumulation.md) for the agent's storage, evidence, and authorization procedure.
 
-```toml
-version = 1
+## Documentation and contributing
 
-[case_recording]
-root = "/absolute/path/to/personal-store"
-mode = "automatic"
-audience = "personal"
-```
-
-Use `automatic` to record material cases, `proposals` to review candidate entries without writes, or `disabled` to skip recording.
-Set `root` to an absolute path valid in your environment; Windows and WSL may use different homes and stores.
-On Windows, use a TOML literal string for paths containing backslashes.
-Recording cases does not authorize guidance changes or separate improvement records.
-If the selected store is unavailable, retain available findings in the response and report any gaps that limit the requested review.
-Follow-up evidence can be appended to an existing case within its recording authorization; preserve the original account and link the earlier change when available.
-
-### Initialize once, connect each device
-
-The intended arrangement uses AEM to deliver the personal store and manage its installed directory link across devices.
-The helper initializes store content and optionally connects local recording settings; it does not own directory delivery, AEM state, or synchronization.
-AEM is not a runtime dependency: independently prepared or synchronized stores work with the same commands.
-The helper needs a checkout of this repository and Python 3.11 or later; use `python3` if that is your Python command.
-
-Initialize the source store once per person, before distributing it:
-
-```bash
-python scripts/setup_store.py init --root /absolute/source-store --dry-run
-python scripts/setup_store.py init --root /absolute/source-store
-```
-
-`init` creates only a basic README, case template, and `cases/` and `evidence/` directories with Git-trackable placeholders.
-An absent or empty directory, including a checkout containing only `.git`, receives this template.
-Other nonempty stores retain their existing organization.
-No device-local configuration is read or written.
-Choose the source store path explicitly rather than creating content at a path AEM will later install as a link.
-Commit and distribute the initialized source through your chosen management workflow.
-
-On each device, first install/connect the existing store through AEM or your independent workflow.
-For stores receiving local records through AEM directory management, use a link; edits to installed copies are not collected into the source.
-Then, if local recording configuration is needed, preview and connect it:
-
-```bash
-python scripts/setup_store.py configure --root /absolute/installed-store --mode automatic --dry-run
-python scripts/setup_store.py configure --root /absolute/installed-store --mode automatic
-python scripts/setup_store.py configure --check
-```
-
-`configure` requires an existing store, accepts installed directory links, and never changes store contents or creates the store.
-It writes `.config/agent-loop/config.toml` under the current environment's home.
-Without `--root`, it uses the existing configured path or `~/agent-loop`; without `--mode`, it keeps the existing mode or uses `proposals` for a new configuration.
-Selecting `automatic` authorizes material personal case records and necessary evidence across tasks, subject to explicit user instructions.
-Existing configuration is validated and preserved; conflicting requested values require an explicit edit through its governing owner.
-If AEM settings already manage that file, use the AEM settings workflow for changes rather than this helper.
-
-Store delivery does not deliver this separate local configuration.
-Common recording policy can come from personal guidance or selected AEM-managed settings; absolute store paths and target bindings remain device-specific.
-If applicable guidance already authorizes recording at the default store, local configuration may be unnecessary.
-Git transport still requires authorized publication; concurrent histories require explicit reconciliation rather than automatic merging by this helper.
-
-Both commands support `--dry-run` without writes.
-`configure --check` validates the existing configuration and store directory; it does not guarantee later write access or evaluate record content.
-An interrupted setup may leave files already created; inspect that partial state before retrying.
-The helper does not initialize Git, authorize commits, install skills, modify catalogs, or publish anything.
-All three skills remain independently usable without the helper or AEM.
-
-See [Case accumulation](skills/wrap-up/references/case-accumulation.md) for storage, evidence, and authorization details.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for development setup, design boundaries, and validation.
+[Documentation](docs/README.md) introduces the setup guide and the design constraints for contributors.
+See [Contributing](CONTRIBUTING.md) for development setup, validation, and submitting changes.
 
 ## AI disclosure
 

@@ -17,12 +17,18 @@ In a feedback loop, turn observations into a justified improvement and leave a q
 
 ## Route the input
 
-- For cases or observations, read [Case analysis](references/analysis.md) to distinguish evidence from interpretations and identify a justified improvement or further check.
-- For a direct request, establish the intended behavior and scope from the request and accessible context, then enter the common update path.
-- For follow-up evidence, use case analysis to assess the earlier change, then enter the same update path if another change is warranted.
+Choose the analysis needed for the input, then use the same update procedure:
 
-In every path, read [Common update path](references/update.md) for source discovery, change design, application, validation, and result recording.
+| Input | Entry path |
+| --- | --- |
+| Cases or observations | Read [Case analysis](references/analysis.md) to distinguish evidence from interpretations and identify a justified improvement or further check. |
+| Direct request | Establish the intended behavior and scope from the request and accessible context, then enter the common update path. |
+| Follow-up evidence | Use case analysis to assess the earlier change, then enter the same update path if another change is warranted. |
+
+In every path, read [Common update path](references/update.md) for source discovery, change design, application, validation, and follow-up.
+For case input or authorized result recording, read [Records and storage](references/records.md) for store discovery, recording permissions, and evidence preservation.
 Keep the input's intent, evidence limits, and authorization visible as it moves through that path.
+
 An analysis-only request produces findings and a reviewable proposal without applying instruction or skill changes.
 Reuse an existing request to apply changes within its scope; do not add a confirmation step merely because the work concerns guidance.
 

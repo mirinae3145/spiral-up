@@ -43,9 +43,13 @@ Retained evidence in temporary locations may be gone; report what is unavailable
 
 ## Use the relevant follow-up procedure
 
-- For observation questions and effect assessment, read [Observation follow-up](references/observation.md) to find relevant records, compare current evidence, retain uncertainty, and record authorized findings.
-- For understanding or resuming handed-off work, read [Task continuation](references/continuation.md) to reconcile the handoff with current artifacts and prepare or execute the restart.
-- For a combined request, use the relevant parts of both procedures without repeating recovery or requiring separate modes.
+Select the procedure from the requested follow-up:
+
+| Request | Procedure |
+| --- | --- |
+| Observation questions or effect assessment | Read [Observation follow-up](references/observation.md) to find relevant records, compare current evidence, retain uncertainty, and record authorized findings. |
+| Understanding or resuming handed-off work | Read [Task continuation](references/continuation.md) to reconcile the handoff with current artifacts and prepare or execute the restart. |
+| Both | Use the relevant parts of both procedures without repeating recovery or requiring separate modes. |
 
 ## Return the result and next starting point
 

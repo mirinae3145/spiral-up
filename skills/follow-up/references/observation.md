@@ -3,20 +3,26 @@
 Use this procedure to revisit questions left for later and assess the effects of earlier changes.
 An observation question or relevant later evidence is sufficient input; a formal handoff, completed improvement, or case store is not required.
 
-## Find the question and relevant records
+## Find the question
 
 Scope discovery to the user's question, selected records, or relevant change or topic.
 When asked to find open observation questions, inspect the relevant records and their follow-ups rather than treating every recorded suggestion as an active task.
 Resolve whether a question has already been answered, superseded, or left open, keeping its original intent and any later revision distinguishable.
 Do not audit unrelated stores or create a tracking system to make the input fit this procedure.
 
+## Locate relevant records
+
 Use the location designated by the user or applicable guidance and inspect the store's README, contribution guidance, templates, related records, and actual organization when needed.
 Use supported connected tools for a designated non-local store without requiring a local mirror.
+
 For the existing personal arrangement, inspect `agent-loop` under the current environment's user home unless a location is selected explicitly or by the optional UTF-8 `.config/agent-loop/config.toml` under that home.
 The supported configuration uses `version = 1` and a `case_recording` table with an absolute environment-valid `root`, `mode` (`automatic`, `proposals`, or `disabled`), and `audience = "personal"`.
 Follow explicit user instructions over configuration; do not expand or translate configured paths between Windows and WSL.
+
 An invalid relevant configuration or unavailable selected store is a limitation, not permission to fall back to another store or create one.
 Continue with accessible supplied evidence and state which questions or conclusions the missing records prevent resolving.
+
+## Recover observation context
 
 Recover what was left to observe, why it matters, and any condition for a useful observation.
 For an earlier improvement, connect the original evidence, decision, expected effect, changed source and known version, and application or installation results when available.
@@ -58,7 +64,13 @@ Related reviews of the same incident belong with its existing record rather than
 
 Write only when the user request, applicable guidance, or personal configuration authorizes the destination and recording scope.
 An existing store or default path does not authorize recording.
-The existing `automatic` mode authorizes material personal case records and necessary supporting evidence, including case follow-ups within that scope; it does not authorize separate improvement records or guidance changes.
-For `proposals`, present candidate entries without writes; for `disabled`, skip persistent recording, subject to explicit user instructions.
+Subject to explicit user instructions, the personal configuration's modes govern case recording as follows:
+
+| Mode | Recording scope |
+| --- | --- |
+| `automatic` | Material personal case records and necessary supporting evidence, including case follow-ups within that scope; no authorization for separate improvement records or guidance changes. |
+| `proposals` | Present candidate entries without writes. |
+| `disabled` | Skip persistent recording. |
+
 If recording is not authorized or the selected destination is unavailable, retain findings and the next check in the response without creating another destination.
 Link appropriately retained evidence and minimize copied private details; recording does not authorize commits, publication, tracker updates, or messages to others.
