@@ -59,7 +59,7 @@ def configure(args, config):
         print(f"Valid personal recording configuration: {config}")
         return []
     if mode == "automatic":
-        print("Automatic authorizes material personal case records and necessary evidence across tasks.")
+        print("Automatic authorizes material personal case records, necessary evidence, and retirement of resolved cases across tasks.")
     if existing:
         print(f"Preserve existing configuration: {config}")
         return []

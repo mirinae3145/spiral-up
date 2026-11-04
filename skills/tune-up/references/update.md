@@ -81,4 +81,5 @@ An update request does not automatically authorize catalog changes, installation
 
 For case input or authorized result recording, use [Records and storage](records.md) to resolve the destination and preserve evidence.
 A direct request can be completed without a case store.
+Retire the cases that an applied change or a no-change conclusion resolves, as [Retire resolved cases](records.md#retire-resolved-cases) describes.
 If the destination or recording authorization is unresolved, report findings and the next check without blocking the update or creating a store.

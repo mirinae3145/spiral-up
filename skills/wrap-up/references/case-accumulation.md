@@ -38,8 +38,8 @@ The local configuration modes control persistent recording as follows:
 
 | Mode | Action |
 | --- | --- |
-| `automatic` | Record material cases and necessary supporting evidence within the selected personal store. |
-| `proposals` | Present candidate entries without writing. |
+| `automatic` | Record material cases and necessary supporting evidence, and retire resolved cases, within the selected personal store. |
+| `proposals` | Present candidate entries and retirement candidates without writing. |
 | `disabled` | Skip persistent recording. |
 
 Without recording authorization, handle material cases as in `proposals` mode.
@@ -87,7 +87,7 @@ Inspect the existing configuration and verify its scope before changing global G
 
 ## Preserve incident history
 
-Search configured stores for related cases before writing.
+Search configured stores for related cases before writing, including their resolution tables.
 Update the same incident rather than counting a later review as a new one; link genuinely separate incidents.
 Preserve the original observation when adding recovery results or revising a hypothesis.
 Keep observed conditions, evidence, impact, recovery, and cause hypotheses distinct.
@@ -112,3 +112,29 @@ These links support later improvement review; wrap-up does not apply instruction
 Use stable identifiers and one canonical record per incident; link cross-project comparisons only in enabled stores.
 Do not copy transcripts, credentials, or private details across audiences.
 Selective records do not establish an overall failure rate or justify changing governing instructions.
+
+## Retire resolved cases
+
+When this task's evidence settles an earlier case, retire it within recording authorization.
+Retirement keeps the active set to cases that still need attention.
+Follow the store's own retention policy when it defines one.
+Preservation of original accounts applies to active records; a retired case remains only as its table row and the evidence carried forward.
+
+A case is resolved in any of these situations:
+
+- **Improvement applied**: An improvement addressing it has been applied, and another record carries any open observation question.
+- **No change needed**: Analysis concluded that no change is warranted, and no question remains open.
+- **Duplicate**: Another record covers the same incident.
+
+Keep a case active while a material issue, pending decision, or open observation question depends on it alone.
+
+Before deleting a case, carry forward what later work still needs.
+Ensure the record that carries an open question retains the evidence summary, severity, agent and model, and expected effect.
+Add one row to the store's resolution table with the case ID, a short title, severity, resolution, and retirement date.
+The resolution names the improvement record, source change, or reason no change was needed.
+Redirect links from remaining records to that row or to the carrying record.
+
+Then delete the case file and any evidence used only by it, keeping evidence that remaining records reference.
+Report the retired case IDs.
+Without an established table, use `resolved-cases.md` at the store root.
+When a resolved issue recurs, record a new case that links the earlier row.

@@ -91,9 +91,10 @@ Select cases for their evidence value, such as consequential incidents or inform
 A case can preserve observations and recovery without prescribing a future lesson or promising to check a repeat task.
 Each case notes the issue's severity and the agent and model involved.
 Later guidance review can prioritize a severe issue even from a single case and separate model-specific behavior from general guidance problems.
+Once its decision is settled, a case is deleted and leaves one row in a resolution table, keeping the active set small.
 
 Writing records requires authorization through your request, guidance, or local configuration.
-The `automatic` recording mode lets every closeout record material cases without a separate request.
+The `automatic` recording mode lets the skills record material cases and retire resolved ones without a separate request.
 Without authorization, Wrap Up presents candidate entries for you to record.
 The skills remain usable without a store, but each review then starts only from what you bring to it.
 

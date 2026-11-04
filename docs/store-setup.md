@@ -21,8 +21,8 @@ Choose the recording mode for the intended level of authorization:
 
 | Mode | Behavior |
 | --- | --- |
-| `automatic` | Record material cases. |
-| `proposals` | Review candidate entries without writes. |
+| `automatic` | Record material cases and retire resolved ones. |
+| `proposals` | Review candidate entries and retirement candidates without writes. |
 | `disabled` | Skip recording. |
 
 Choose `automatic` to accumulate cases across tasks, which is what lets later guidance reviews and follow-ups build on earlier closeouts.
@@ -80,7 +80,7 @@ python scripts/setup_store.py configure --check
 `configure` requires an existing store and accepts installed directory links.
 It never changes store contents or creates the store.
 It writes `.config/agent-loop/config.toml` under the current environment's home.
-Selecting `automatic` authorizes material personal case records and necessary evidence across tasks, subject to explicit user instructions.
+Selecting `automatic` authorizes material personal case records, necessary evidence, and retirement of resolved cases across tasks, subject to explicit user instructions.
 
 Omitted options use these defaults:
 

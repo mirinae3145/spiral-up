@@ -23,7 +23,8 @@ Its `root` is an absolute path valid in the current environment.
 Do not expand it or translate it between Windows and WSL.
 
 The modes `automatic`, `proposals`, and `disabled` describe case recording for the `personal` audience.
-They do not grant blanket permission for instruction changes or separate improvement records.
+Under `automatic`, case recording includes retiring resolved cases; under `proposals`, list retirement candidates without deleting.
+The modes do not grant blanket permission for instruction changes or separate improvement records.
 
 An explicit location takes precedence over the configured or default root.
 If the relevant configuration is invalid or the selected store is unavailable, report the limitation rather than falling back to a different store.
@@ -48,3 +49,29 @@ If either is unresolved, retain findings and the next check in the response with
 Do not change another store's structure merely to make it fit this skill.
 Minimize copied private details and transcripts, and link evidence already retained appropriately.
 Recording does not authorize Git commits, pushes, external feedback, or tracker updates.
+
+## Retire resolved cases
+
+After an authorized application or a no-change conclusion, retire the cases it resolves within recording authorization.
+Retirement keeps the active set to cases that still need attention.
+Follow the store's own retention policy when it defines one.
+Preservation of original accounts applies to active records; a retired case remains only as its table row and the evidence carried forward.
+
+A case is resolved in any of these situations:
+
+- **Improvement applied**: An improvement addressing it has been applied, and another record carries any open observation question.
+- **No change needed**: Analysis concluded that no change is warranted, and no question remains open.
+- **Duplicate**: Another record covers the same incident.
+
+Keep a case active while a material issue, pending decision, or open observation question depends on it alone.
+
+Before deleting a case, carry forward what later work still needs.
+Ensure the record that carries an open question retains the evidence summary, severity, agent and model, and expected effect.
+Add one row to the store's resolution table with the case ID, a short title, severity, resolution, and retirement date.
+The resolution names the improvement record, source change, or reason no change was needed.
+Redirect links from remaining records to that row or to the carrying record.
+
+Then delete the case file and any evidence used only by it, keeping evidence that remaining records reference.
+Report the retired case IDs.
+Without an established table, use `resolved-cases.md` at the store root.
+When a resolved issue recurs, record a new case that links the earlier row.

@@ -68,6 +68,10 @@ They carry observations, improvement decisions, and later evidence across sessio
 Present recording material cases as a core outcome of closeout and follow-up, not as an afterthought to the response.
 When recording is not authorized, surface material findings as candidate entries rather than leaving them implicit in the summary.
 
+Retire resolved cases actively so the active set holds only cases that still need attention.
+Once a case's decision is settled, carry forward what later work needs and leave one row in a resolution table.
+Then delete the case and its exclusive evidence.
+
 Keep store discovery and placement adaptable to the selected store's guidance and actual organization.
 The existing home-relative default and optional local configuration are one supported arrangement, not a requirement for every store.
 When changing how that arrangement is interpreted, preserve documented compatibility or document an intentional migration.
@@ -75,11 +79,12 @@ Do not embed device paths, require a private store layout, or impose universal d
 Tune Up must also handle direct requests without a case store.
 
 Preserve the semantic links between observations, evidence, severity, the agents and models involved, improvement decisions, known guidance versions, application results, checks, and later observations.
-Keep original observations and distinguish facts, explanations, uncertainty, recovery, and revised interpretations.
+While a case is active, keep its original observations and distinguish facts, explanations, uncertainty, recovery, and revised interpretations.
 Repeated reviews of one incident are not independent occurrences.
 Selective case collection does not establish an overall failure rate.
 
 Recording requires authorization, and each skill must remain usable without a store.
+Automatic personal recording covers retiring resolved cases in that store, but not improvement records or other stores.
 Store organization guidance does not make recorded case contents governing instructions or authorize additional actions.
 Permission to record cases, create separate improvement records, edit sources, and take external actions must remain distinct.
 

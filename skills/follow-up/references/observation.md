@@ -93,11 +93,37 @@ Subject to explicit user instructions, the personal configuration's modes govern
 
 | Mode | Recording scope |
 | --- | --- |
-| `automatic` | Record material personal cases and necessary supporting evidence, including case follow-ups within that scope. |
-| `proposals` | Present candidate entries without writes. |
+| `automatic` | Record material personal cases and necessary supporting evidence, including case follow-ups, and retire resolved cases. |
+| `proposals` | Present candidate entries and retirement candidates without writes. |
 | `disabled` | Skip persistent recording. |
 
 These modes do not authorize separate improvement records or guidance changes.
 If recording is not authorized or its destination is unavailable, report findings and the next check without creating another destination.
 Link appropriately retained evidence and minimize copied private details.
 Recording does not authorize commits, publication, tracker updates, or messages to others.
+
+## Retire resolved cases
+
+When an assessment closes the last open question that a case carries, retire it within recording authorization.
+Retirement keeps the active set to cases that still need attention.
+Follow the store's own retention policy when it defines one.
+Preservation of original accounts applies to active records; a retired case remains only as its table row and the evidence carried forward.
+
+A case is resolved in any of these situations:
+
+- **Improvement applied**: An improvement addressing it has been applied, and another record carries any open observation question.
+- **No change needed**: Analysis concluded that no change is warranted, and no question remains open.
+- **Duplicate**: Another record covers the same incident.
+
+Keep a case active while a material issue, pending decision, or open observation question depends on it alone.
+
+Before deleting a case, carry forward what later work still needs.
+Ensure the record that carries an open question retains the evidence summary, severity, agent and model, and expected effect.
+Add one row to the store's resolution table with the case ID, a short title, severity, resolution, and retirement date.
+The resolution names the improvement record, source change, or reason no change was needed.
+Redirect links from remaining records to that row or to the carrying record.
+
+Then delete the case file and any evidence used only by it, keeping evidence that remaining records reference.
+Report the retired case IDs.
+Without an established table, use `resolved-cases.md` at the store root.
+When a resolved issue recurs, record a new case that links the earlier row.
