@@ -58,7 +58,9 @@ Reasons for retention include:
 - Informative outcomes.
 
 A consequential one-off failure can merit a record even when recurrence is unlikely or no improvement is yet justified.
+A near miss with severe potential impact can merit one even when no harm occurred.
 Reporting a material case in the summary does not substitute for recording it, because the summary is not available to later review.
+
 Ordinary corrected tool errors, local setup discoveries, and minor implementation retries usually belong only in task context.
 Include them there when needed to explain the result or resume work.
 The ability to write "next time, check X first" does not establish case value.
@@ -91,8 +93,13 @@ Preserve the original observation when adding recovery results or revising a hyp
 Keep observed conditions, evidence, impact, recovery, and cause hypotheses distinct.
 Include useful counterexamples and observed results of mitigations.
 
-Retain relevant context about the guidance behind an observation:
+Retain the context needed to interpret and prioritize an observation:
 
+- **Severity**: Judge the actual and potential impact from its consequences, reversibility, and reach, such as user work, external state, or a near miss.
+  Use the store's established scale; otherwise give a coarse level, such as high, medium, or low, with its basis.
+  Judge severity independently of how often the problem occurred.
+- **Agent and model**: Identify the agent client and model that performed the work, including relevant versions or settings.
+  Take this identity from the environment or session records, and state when it is unknown.
 - **Source and version**: When available and relevant, identify the instruction or skill source and version in effect at the time.
   State when that version is unknown; do not judge past actions solely against current wording.
 - **Earlier improvements**: For observations about an earlier improvement, link its existing record and known applied version.

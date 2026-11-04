@@ -89,7 +89,8 @@ A closeout summary ends with its session, while a recorded case stays available 
 
 Select cases for their evidence value, such as consequential incidents or informative patterns, rather than recording every corrected retry.
 A case can preserve observations and recovery without prescribing a future lesson or promising to check a repeat task.
-Later guidance review can compare the accumulated evidence.
+Each case notes the issue's severity and the agent and model involved.
+Later guidance review can prioritize a severe issue even from a single case and separate model-specific behavior from general guidance problems.
 
 Writing records requires authorization through your request, guidance, or local configuration.
 The `automatic` recording mode lets every closeout record material cases without a separate request.

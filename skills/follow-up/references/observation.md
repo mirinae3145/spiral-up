@@ -40,6 +40,7 @@ Continue with accessible supplied evidence and explain which questions or conclu
 Recover what was left to observe, why it matters, and any condition for a useful observation.
 For an earlier improvement, connect the original evidence, decision, and expected effect when available.
 When available, include the improvement's changed source, known version, and application or installation results.
+Also recover the original issue's severity and the agent and model involved.
 For a question without an earlier change, identify the situation and evidence that would answer it.
 
 Distinguish a proposed change from an applied one.
@@ -56,7 +57,7 @@ When version, exposure, or opportunity is unknown, retain that uncertainty rathe
 Compare expected and observed behavior, impact, recovery, and conditions that could explain differences.
 Use earlier checks only within their known revision and environment.
 Passing structure checks do not demonstrate behavioral effectiveness.
-Consider other changes in tools, task difficulty, user intervention, or circumstances when they could affect the judgment.
+Consider differences in agent or model, tools, task difficulty, user intervention, or circumstances when they could affect the judgment.
 Avoid causal claims that the evidence cannot support.
 
 Treat later reviews, copied summaries, and recovery updates about one incident as the same occurrence.

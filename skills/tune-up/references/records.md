@@ -34,6 +34,7 @@ An unavailable store need not block a direct update whose input and source are o
 Before choosing a destination, inspect related records and follow the store's established organization.
 Do not impose directory names, filename prefixes, headings, or a database schema.
 When available, retain stable references linking the input, decision, affected source and known version, application and validation results, and later observations.
+Also retain the input's severity and the agents and models involved.
 These are semantic relationships, not required fields in a universal template.
 
 Existing case authorization may cover case follow-ups within its scope.

@@ -45,6 +45,11 @@ New skills can define task procedures.
 Implementing broader workflow systems or automation is outside the current execution scope.
 Expanding that scope requires explicit changes to routing, authorization, documentation, and validation coverage.
 
+Weigh an issue's severity alongside its recurrence when setting priority and the evidence a change needs.
+A high-severity incident can justify prioritizing a targeted improvement from a single case, while low-impact friction calls for comparison before adding guidance.
+Severity needs a stated basis, not a universal scale.
+Distinguish problems confined to one agent or model from those seen across them before choosing where guidance belongs.
+
 ## Optional AEM integration
 
 Actively use available AEM skills and commands for managed-source discovery and authorized operations, without making either a required dependency.
@@ -69,7 +74,7 @@ When changing how that arrangement is interpreted, preserve documented compatibi
 Do not embed device paths, require a private store layout, or impose universal directory names, case IDs, document headings, or record schemas.
 Tune Up must also handle direct requests without a case store.
 
-Preserve the semantic links between observations, evidence, improvement decisions, known guidance versions, application results, checks, and later observations.
+Preserve the semantic links between observations, evidence, severity, the agents and models involved, improvement decisions, known guidance versions, application results, checks, and later observations.
 Keep original observations and distinguish facts, explanations, uncertainty, recovery, and revised interpretations.
 Repeated reviews of one incident are not independent occurrences.
 Selective case collection does not establish an overall failure rate.
@@ -115,6 +120,7 @@ Account for Windows and WSL independently, without rewriting one environment's p
 Keep proposals, applied source changes, installed changes, and observed effects distinguishable.
 A passing structure check or edited file does not demonstrate improved behavior.
 Later assessments should establish whether the changed guidance was actually used and consider counterexamples and new friction.
+An effect observed under one agent or model does not establish the effect under another.
 Retain uncertainty when use or causality is unknown.
 
 When available, retain the expected effect, relevant evidence, and a useful condition for the next observation.

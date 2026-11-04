@@ -53,10 +53,11 @@ Propose a concrete improvement when evidence supports a useful change beyond the
 A finding can be worth retaining without a prescription.
 Keep routine review brief; expand for material findings.
 
-Describe material findings with the relevant source, observed behavior, impact, and recovery.
+Describe material findings with the relevant source, observed behavior, impact and its severity, and recovery.
 Explain the cause when supported; otherwise state the uncertainty.
 Separate observations from hypotheses.
-One failure does not establish a new rule; avoid self-blame or promises to "be more careful".
+One failure does not establish a general rule, although a severe one can justify proposing a targeted safeguard.
+Avoid self-blame or promises to "be more careful".
 
 Report material findings and improvement proposals to the user as part of the retrospective; this reporting requires no separate approval.
 Applying instruction changes or sending feedback to maintainers or other recipients requires the user's authorization for that action.
@@ -65,8 +66,8 @@ Reuse existing authorization when it covers the action.
 ## Observations for later improvement
 
 When this task provides relevant evidence about an earlier guidance change, identify its source and known version.
-Establish whether the changed guidance was used and describe the observed outcome, including any counterexamples or new friction.
-State when exposure, version, or causal contribution is unknown.
+Establish whether the changed guidance was used, by which agent and model, and describe the observed outcome, including any counterexamples or new friction.
+State when exposure, version, model, or causal contribution is unknown.
 An applied change, a passing check, or a successful task alone does not demonstrate that the guidance improved behavior.
 Use available task evidence without starting a separate investigation merely to evaluate a prior change.
 

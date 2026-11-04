@@ -3,6 +3,8 @@
 Occurred: date or unknown.
 Recorded: date.
 Context: task or project.
+Agent: client and model, or unknown.
+Severity: level, such as high, medium, or low, and its basis.
 
 ## Observation and evidence
 
