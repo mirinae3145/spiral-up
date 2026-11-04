@@ -52,6 +52,7 @@ Recording, applying a change, deploying it, and evaluating its effect are separa
 
 Lead with the decision or resulting behavior and identify the relevant source, changes, checks, and remaining uncertainty.
 Link cases and improvement records when available.
+When recording is authorized, connect the result to its source cases so a later follow-up can find the expected effect and next observation.
 Otherwise, keep enough context in the response to support later work.
 Distinguish a proposal, an applied source change, an installed or distributed change, and an observed effect.
 

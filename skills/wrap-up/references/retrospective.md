@@ -78,8 +78,8 @@ Without such an opportunity, state the limit when material without inventing a f
 
 These findings can support Follow Up, Tune Up, or another later review.
 Do not automatically invoke those skills or make closeout depend on them.
-Keep findings in the summary unless case recording is authorized.
-Recording follows [Case accumulation](case-accumulation.md) and does not authorize guidance changes or separate improvement records.
+Record material findings as cases when recording is authorized, and otherwise present them as candidate entries, following [Case accumulation](case-accumulation.md).
+Recording does not authorize guidance changes or separate improvement records.
 
 ## Recover missing evidence
 

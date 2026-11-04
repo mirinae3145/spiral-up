@@ -73,7 +73,8 @@ Connect the result to the requested outcome:
   Include relevant paths or references.
 
 Make the response self-contained without reproducing the input.
-Do not require a new handoff file, case record, evaluation score, or fixed response template.
+Do not require a new handoff file, evaluation score, or fixed response template.
+When an assessment concerns a recorded case and recording is authorized, append the findings to that case so the next review starts from them.
 
 Findings can support Tune Up or another improvement review.
 A subsequent Wrap Up can retain the result and review the follow-up work itself.

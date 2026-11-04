@@ -1,6 +1,6 @@
 # Personal case store setup
 
-This guide explains how to authorize optional case recording, initialize a shared source store, and connect an existing store on each device.
+This guide explains how to authorize case recording, initialize a shared source store, and connect an existing store on each device.
 The setup helper requires a checkout of this repository and Python 3.11 or later.
 Run its commands from the repository root, using `python3` if that is your Python command.
 
@@ -24,6 +24,9 @@ Choose the recording mode for the intended level of authorization:
 | `automatic` | Record material cases. |
 | `proposals` | Review candidate entries without writes. |
 | `disabled` | Skip recording. |
+
+Choose `automatic` to accumulate cases across tasks, which is what lets later guidance reviews and follow-ups build on earlier closeouts.
+With `proposals`, candidate entries stay in each response until you record them.
 
 Set `root` to an absolute path valid in your environment.
 Windows and WSL may use different homes and stores.

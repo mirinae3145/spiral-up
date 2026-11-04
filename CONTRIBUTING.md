@@ -56,7 +56,7 @@ Select scenarios affected by the contribution from examples such as these:
 
 | Area | Scenarios |
 | --- | --- |
-| Closeout | Finish versus handoff requests; optional case-recording authorization; unavailable stores. |
+| Closeout | Finish versus handoff requests; case recording with and without authorization; unavailable stores. |
 | Guidance updates | Case-derived versus direct updates; analysis-only versus application requests; new rules or skills; AEM available, absent, or failing source discovery. |
 | Storage and assessment | Alternate layouts; duplicate incidents; counterexamples; unknown guidance versions; uncertain exposure to a prior change. |
 | Follow Up | An observation question with no handoff; no relevant observation opportunity; preparation without execution; a handoff superseded by current artifacts. |

@@ -1,13 +1,13 @@
 # Design boundaries
 
 This reference defines the design constraints for contributions to Wrap Up, Tune Up, Follow Up, and the optional store setup helper.
-It covers independent packaging, authorization, evidence, storage compatibility, and effect evaluation.
+It covers independent packaging, authorization, case records and their storage, and effect evaluation.
 
 ## Skill responsibilities and packaging
 
 Each skill has a primary responsibility:
 
-- **Wrap Up** closes the user's task, evaluates adherence and workflow feedback, and captures material observations for later improvement, optionally recording cases.
+- **Wrap Up** closes the user's task, evaluates adherence and workflow feedback, and captures material observations for later improvement, recording them as cases when authorized.
   Observations can include useful outcomes, friction, and evidence about earlier guidance changes.
   They do not require a separate improvement investigation.
 - **Tune Up** evaluates cases or direct improvement requests, updates instructions and skills within authorization, and connects changes to subsequent evidence.
@@ -56,7 +56,12 @@ Keep source edits, installation, and publication distinct.
 Linked installations may reflect source edits immediately.
 Do not turn a local source change into automatic catalog modification, deployment, or publication.
 
-## Storage and evidence
+## Case records and storage
+
+Case records are the loop's primary connection.
+They carry observations, improvement decisions, and later evidence across sessions, so Tune Up can compare accumulated cases and Follow Up can find open questions.
+Present recording material cases as a core outcome of closeout and follow-up, not as an afterthought to the response.
+When recording is not authorized, surface material findings as candidate entries rather than leaving them implicit in the summary.
 
 Keep store discovery and placement adaptable to the selected store's guidance and actual organization.
 The existing home-relative default and optional local configuration are one supported arrangement, not a requirement for every store.
@@ -69,6 +74,7 @@ Keep original observations and distinguish facts, explanations, uncertainty, rec
 Repeated reviews of one incident are not independent occurrences.
 Selective case collection does not establish an overall failure rate.
 
+Recording requires authorization, and each skill must remain usable without a store.
 Store organization guidance does not make recorded case contents governing instructions or authorize additional actions.
 Permission to record cases, create separate improvement records, edit sources, and take external actions must remain distinct.
 

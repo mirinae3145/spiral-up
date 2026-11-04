@@ -3,7 +3,8 @@ name: wrap-up
 description: >
   Closes out the current task: reconciles it with the actual project state,
   cleans up, verifies results, and captures useful observations about guidance
-  and workflow for later improvement, resuming, or handing off.
+  and workflow, as case records when authorized, for later improvement,
+  resuming, or handing off.
   Use when the user explicitly asks to close out the task or session, either by completing it or by handing off its current state.
 ---
 
@@ -11,9 +12,12 @@ description: >
 
 Close out the task according to the user's requested outcome.
 Leave a verified result or a resumable handoff, along with material observations that can inform the next task's guidance.
-Use observations about instruction adherence and workflow to inform later improvements.
 A later closeout can capture follow-up findings; ordinary sessions use the same procedure.
-Closeout does not itself apply guidance changes or require case recording or an installed Tune Up skill.
+
+Use observations about instruction adherence and workflow to inform later improvements.
+Recording material observations as cases is how closeout feeds that improvement.
+The summary ends with the session, while a case remains available for later review.
+Closeout does not itself apply guidance changes, and it does not depend on an installed Tune Up skill.
 
 ## Scope and requested outcome
 
@@ -48,13 +52,16 @@ Its cleanup and handoff sections distinguish disposable leftovers from supportin
 As part of that procedure, read [Retrospective](references/retrospective.md) to assess instruction adherence and workflow feedback using the task's evidence.
 If missing history could affect a material finding, read [Session recovery](references/session-recovery.md) for bounded, read-only recovery of relevant local records.
 
-## Optional case recording
+## Case recording
+
+Record material cases whenever authorization allows, because they carry this closeout's evidence to later guidance review and follow-up.
+Read [Case accumulation](references/case-accumulation.md) to resolve the store and recording mode, inspect the actual store structure, and record or propose material cases.
 
 Use `agent-loop` under the current execution environment's user home as the neutral default store location.
 A user request, applicable guidance, or local configuration may override the location and recording mode.
-Read [Case accumulation](references/case-accumulation.md) to resolve those choices, inspect the actual store structure, and record or propose material cases.
 A default path does not by itself authorize writing or creating a store.
-Reuse established recording authorization within its scope; otherwise leave candidate findings in the summary without blocking closeout.
+Reuse established recording authorization within its scope.
+Without it, present material findings as candidate case entries in the summary, without blocking closeout.
 
 ## Closeout summary
 
@@ -65,7 +72,7 @@ Distinguish adherence findings and workflow feedback from task completion.
 Separate sections are optional; do not make unsupported claims of complete compliance.
 
 For material improvement findings, retain enough evidence and source context for a later guidance review.
-No separate record is required, and there is no need to repeat the conversation.
+Link the cases recorded for them, or identify unrecorded findings as candidate entries, without repeating the conversation.
 For a material open question with a plausible observation opportunity, retain what could resolve it and where that evidence could arise.
 A resolved incident requires no future lesson or observation commitment; follow the selection criteria in the retrospective and case-recording references.
 

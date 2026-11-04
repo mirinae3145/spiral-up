@@ -30,7 +30,7 @@ Apply these steps within the requested outcome and authorized scope:
    Distinguish completion evidence from adherence findings and observations about what helped or hindered the workflow.
    Capture material recommendations and, when relevant evidence is available, observations about earlier guidance changes for later assessment.
 1. **Handoff** &mdash; write the [Closeout summary](../SKILL.md#closeout-summary) and follow [Handoff records](#handoff-records) when a separate record is useful.
-   Apply [Optional case recording](../SKILL.md#optional-case-recording) whether or not a handoff file is needed.
+   Apply [Case recording](../SKILL.md#case-recording) whether or not a handoff file is needed; a handoff file does not replace a case record.
    Link any records written or state any material limitation.
 
 Commit only when asked or by repository convention.

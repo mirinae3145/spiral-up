@@ -1,6 +1,7 @@
 # Case accumulation
 
-Resolve optional case recording, select material observations, and place records and supporting evidence in the authorized store.
+Resolve case recording, select material observations, and place records and supporting evidence in the authorized store.
+Case records are closeout's main contribution to later improvement: they keep evidence available to guidance reviews and follow-ups after the session's summary is gone.
 Preserve the store's organization and the distinction between recording evidence and applying guidance changes.
 
 ## Resolve the store
@@ -41,7 +42,9 @@ The local configuration modes control persistent recording as follows:
 | `proposals` | Present candidate entries without writing. |
 | `disabled` | Skip persistent recording. |
 
-Without recording authorization, leave useful findings in the summary.
+Without recording authorization, handle material cases as in `proposals` mode.
+Give each candidate entry enough evidence to be recorded later without this session.
+When useful, note that the request or local configuration can authorize recording.
 Recording does not authorize instruction changes, external feedback, task-tracker updates, or Git commits and pushes.
 
 ## Select what merits a case
@@ -55,6 +58,7 @@ Reasons for retention include:
 - Informative outcomes.
 
 A consequential one-off failure can merit a record even when recurrence is unlikely or no improvement is yet justified.
+Reporting a material case in the summary does not substitute for recording it, because the summary is not available to later review.
 Ordinary corrected tool errors, local setup discoveries, and minor implementation retries usually belong only in task context.
 Include them there when needed to explain the result or resume work.
 The ability to write "next time, check X first" does not establish case value.

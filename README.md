@@ -14,6 +14,7 @@ Choose a skill for the work at hand:
 
 A typical loop is **Wrap Up &rightarrow; Tune Up &rightarrow; Follow Up &rightarrow; Wrap Up**.
 Retain observations, improve guidance, assess the effects, and capture what the follow-up work taught us.
+[Case records](#record-cases) carry that evidence from one step to the next, so each pass starts above the last.
 Enter wherever the task needs it.
 Each skill accepts other inputs and can finish without invoking the next skill or requiring the whole loop.
 
@@ -26,6 +27,7 @@ Catalog registration and installation are separate operations.
 
 Ask Wrap Up to finish a task or prepare a handoff.
 It checks the actual state, handles cleanup and relevant validation, and summarizes the outcome, remaining work, and useful observations about the guidance and workflow.
+When recording is authorized, it records material observations as cases for later review.
 A handoff-only request leaves unfinished implementation for the next session.
 
 Example requests:
@@ -76,17 +78,26 @@ Follow-up findings can inform another guidance review and be retained during clo
 Evaluating a change does not automatically apply another one, schedule monitoring, or invoke the other skills.
 No fixed record format, evaluation score, or observation schedule is required.
 
-## Record cases (optional)
+## Record cases
 
-Useful findings can stay in the closeout summary or be saved for later review.
+Case records turn the loop into a spiral.
+A closeout summary ends with its session, while a recorded case stays available to each later step:
+
+- **Wrap Up** records material observations from the task.
+- **Tune Up** compares the accumulated cases to justify and scope improvements.
+- **Follow Up** appends later evidence to the same records.
+
 Select cases for their evidence value, such as consequential incidents or informative patterns, rather than recording every corrected retry.
 A case can preserve observations and recovery without prescribing a future lesson or promising to check a repeat task.
 Later guidance review can compare the accumulated evidence.
 
+Writing records requires authorization through your request, guidance, or local configuration.
+The `automatic` recording mode lets every closeout record material cases without a separate request.
+Without authorization, Wrap Up presents candidate entries for you to record.
+The skills remain usable without a store, but each review then starts only from what you bring to it.
+
 The default personal store is `agent-loop` under the current environment's user home.
 All three skills follow the selected store's existing organization.
-Authorize recording through your request, guidance, or local configuration.
-
 [Personal case store setup](docs/store-setup.md) explains recording modes, source initialization, and connecting each device to an existing store.
 See [Case accumulation](skills/wrap-up/references/case-accumulation.md) for the agent's storage, evidence, and authorization procedure.
 

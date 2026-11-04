@@ -1,6 +1,7 @@
 # Personal case store
 
 Keep material incidents and useful outcomes here for later guidance review.
+These records connect closeouts, guidance updates, and later follow-ups across sessions.
 
 - `cases/`: case records; use the example in `templates/case.md` as a starting point.
 - `evidence/`: the minimum supporting material needed to assess a case.
