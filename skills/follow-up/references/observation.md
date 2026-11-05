@@ -124,6 +124,6 @@ The resolution names the improvement record, source change, or reason no change 
 Redirect links from remaining records to that row or to the carrying record.
 
 Then delete the case file and any evidence used only by it, keeping evidence that remaining records reference.
-Report the retired case IDs.
+Report the retired cases by title.
 Without an established table, use `resolved-cases.md` at the store root.
 When a resolved issue recurs, record a new case that links the earlier row.

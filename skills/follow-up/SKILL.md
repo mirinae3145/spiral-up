@@ -73,6 +73,7 @@ Connect the result to the requested outcome:
   Include relevant paths or references.
 
 Make the response self-contained without reproducing the input.
+Refer to cases by short descriptive titles, adding an identifier only where the reader needs to locate a record.
 Do not require a new handoff file, evaluation score, or fixed response template.
 When an assessment concerns a recorded case and recording is authorized, append the findings to that case so the next review starts from them.
 

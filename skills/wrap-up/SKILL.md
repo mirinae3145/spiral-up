@@ -73,6 +73,8 @@ Separate sections are optional; do not make unsupported claims of complete compl
 
 For material improvement findings, retain enough evidence and source context for a later guidance review.
 Link the cases recorded for them, or identify unrecorded findings as candidate entries, without repeating the conversation.
+Refer to cases by short descriptive titles, adding an identifier only where the reader needs to locate a record.
+
 For a material open question with a plausible observation opportunity, retain what could resolve it and where that evidence could arise.
 A resolved incident requires no future lesson or observation commitment; follow the selection criteria in the retrospective and case-recording references.
 
