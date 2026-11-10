@@ -38,6 +38,7 @@ An update request does not automatically authorize catalog changes, installation
    For case-derived changes, retain evidence and confidence limits.
    For a direct request, retain the user's intent without demanding an incident history.
    Check existing guidance for overlap, conflicts, placement, and scope before adding content.
+   Include the summaries and entry points that lead readers to the target, since they decide whether it is read.
 1. Choose among editing, adding, consolidating, or removing instructions and skills.
    Prefer the smallest coherent change, including supporting documentation needed to use it.
    Keep project-specific requirements in their governing documents and personal preferences in the appropriate personal source.

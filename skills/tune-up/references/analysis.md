@@ -11,6 +11,7 @@ Direct change requests enter the [Common update path](update.md) without needing
    Preserve original records and supporting material.
 1. Identify what was expected, what was observed, the impact, recovery actions, and the current condition.
    Separate supported explanations from hypotheses and missing history.
+   Treat a record's attribution, severity, and interpretation as claims to check against its cited evidence.
    Note each incident's severity and the agent and model that acted, assessing severity from the evidence when the record lacks it.
 1. When relevant and available, identify the instruction or skill version in effect at the time, including authorized exceptions.
    Do not judge a past action solely against wording introduced after it occurred.
