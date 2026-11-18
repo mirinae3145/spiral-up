@@ -1,0 +1,3 @@
+# These assets are copied into a separate personal store, where their document
+# tree and record format differ from this repository's maintained documentation.
+/templates/store/

@@ -107,7 +107,7 @@ See [Case accumulation](skills/wrap-up/references/case-accumulation.md) for the 
 ## Documentation and contributing
 
 [Documentation](docs/README.md) introduces the setup guide and the design constraints for contributors.
-See [Contributing](CONTRIBUTING.md) for development setup, validation, and submitting changes.
+See [Contributing](CONTRIBUTING.md) for development setup, document structure, validation, and submitting changes.
 
 ## AI disclosure
 

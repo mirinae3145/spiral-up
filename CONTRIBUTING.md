@@ -1,6 +1,6 @@
 # Contributing
 
-This guide covers development setup, validation, and contribution practices for Wrap Up, Tune Up, and Follow Up.
+This guide covers development setup, document structure, validation, and contribution practices for Wrap Up, Tune Up, and Follow Up.
 It serves human contributors and AI agents.
 See the [README](README.md) for user-facing behavior and setup, and [Design boundaries](docs/design.md) for the constraints that changes must preserve.
 
@@ -29,6 +29,26 @@ Use relative links and keep packaged references resolvable when a skill is insta
 When changing home-relative discovery, path interpretation, or optional tooling, account for Windows and WSL separately.
 Do not assume a shared home or automatically translate configured absolute roots between environments.
 
+## Markdown structure
+
+The repository's Markdown follows the [mddt](https://github.com/mirinae3145/mddt) skill, from an installed copy or a checkout of the mddt repository.
+Start from its [entry](https://github.com/mirinae3145/mddt/blob/main/skills/mddt/SKILL.md), which says which reference documents each task needs.
+
+For Markdown changes, follow its [writing procedure](https://github.com/mirinae3145/mddt/blob/main/skills/mddt/references/writing.md).
+Place content in the document tree before writing it, and reread each changed topic whole once it settles.
+Sentence-only corrections and formatting changes that leave the structure as it was need no placement plan.
+To find or verify information in these documents, follow its [reading procedure](https://github.com/mirinae3145/mddt/blob/main/skills/mddt/references/reading.md).
+
+The repository adds these specifics:
+
+- **Document trees**: The README is the collection overview, and each skill's `SKILL.md` is the entry of an independently installed tree.
+  [Editing and documentation](#editing-and-documentation) says which content belongs in the README, the guides under `docs/`, this guide, and the skill packages.
+- **Store templates**: `templates/store/` is copied into a separate personal store whose document tree and record format differ.
+  `.mddtignore` leaves it out of every document check, while the helper's tests still cover it.
+- **Role of the checker**: Writers and reviewers judge placement, kinds, and summaries, which the checker does not decide.
+  A run without errors is the minimum, not evidence that a document conforms.
+  When a change keeps a warning after judgment, say why in the review description.
+
 ## Validation
 
 Match checks to the changed behavior and report structural checks, scenario review, and actual execution separately.
@@ -45,10 +65,8 @@ Do not present manual scenario review as an agent execution test.
   Inspect new untracked files as well, since ordinary diff checks omit them.
 - **Behavior**: For behavioral changes, review or exercise realistic requests covering the affected decisions rather than matching headings or prescribed wording.
 - **Store helper**: For changes affecting the helper or its templates, run `python -m unittest discover -s tests` from the repository root.
-
-When mddt is available, run its `scripts/mddt.py . --review --exclude 'templates/store/**'` from the repository root to check the document tree.
-Exclude store templates from document-structure checks because they are assets copied into a separate document tree.
-Keep those templates in the helper's validation scope.
+- **Document structure**: For Markdown changes, run `uv run <mddt-skill-dir>/scripts/mddt.py .` from the repository root after rereading as [Markdown structure](#markdown-structure) describes.
+  Replace `<mddt-skill-dir>` with the installed skill directory or a checkout's `skills/mddt`, and add `--review` after adding child documents.
 
 ## Scenario review
 

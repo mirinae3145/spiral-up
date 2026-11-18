@@ -8,4 +8,4 @@ Choose the guide for your task:
 - [Personal case store setup](store-setup.md) explains recording settings, initializing a shared source store, and connecting each device.
 - [Design boundaries](design.md) defines packaging, authorization, storage, and evaluation constraints for contributors.
 
-For development setup, validation, and submitting changes, see [Contributing](../CONTRIBUTING.md).
+For development setup, document structure, validation, and submitting changes, see [Contributing](../CONTRIBUTING.md).
