@@ -50,11 +50,12 @@ A high-severity incident can justify prioritizing a targeted improvement from a 
 Severity needs a stated basis, not a universal scale.
 Distinguish problems confined to one agent or model from those seen across them before choosing where guidance belongs.
 
-## Optional AEM integration
+## Optional installation managers
 
-Actively use available AEM skills and commands for managed-source discovery and authorized operations, without making either a required dependency.
-Maintain a usable path through an environment's authoritative sources when AEM is absent.
-If source lookup for a known AEM-managed target is unavailable or fails, report the limitation.
+Use an environment's installation manager, such as AEM, for managed-source discovery and authorized operations, without making it a required dependency.
+Skill bodies describe this generally and leave tool-specific commands to the manager's own guidance.
+Maintain a usable path through an environment's authoritative sources when no manager is present.
+If source lookup for a managed target is unavailable or fails, report the limitation.
 Do not proceed by editing an unverified installation.
 
 Keep source edits, installation, and publication distinct.

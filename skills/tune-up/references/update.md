@@ -10,27 +10,18 @@ Inspect accessible guidance, repositories, and configuration before asking for d
 Identify the intended audience, governing instruction hierarchy, related guidance, and the editable source of each target.
 Follow applicable contribution and authoring guidance, preserving unrelated changes and repository conventions.
 
-Actively use AEM when available:
+Installed instructions and skills may be copies or links that an installation manager owns.
+Settle their sources as follows:
 
-1. Discover relevant skills from the available skill catalog and read the AEM operations skill if present.
-1. Check whether the `aem` command is available.
-   If it is, read `aem --help` and the relevant command help before selecting operations.
-1. If the catalog name is unknown, identify it through the installed help and read-only catalog or status interfaces.
-   Do not guess from a directory name.
-1. For a known or discovered AEM-managed target, use `aem locate --source` with its catalog name to identify the editable source and ownership.
-   Use JSON output when later steps depend on the returned paths.
-
-The AEM skill and command are independently discoverable.
-Use whichever is available and report material capability limits.
-Without AEM, follow the environment's established source and installation arrangement, using the supplied repository or document when it is authoritative.
-
-For a known AEM-managed target, a failed lookup leaves source discovery unresolved.
-Do not bypass the failure by editing an installed copy or link target whose ownership is unverified.
-Continue analysis or preparation that does not depend on the missing source.
-
-Source edits, installation, and publication are distinct operations.
-Inspect ownership and links before choosing an operation, because content updates can immediately affect linked installations.
-An update request does not automatically authorize catalog changes, installation, publication, or modification of unrelated contents in the same repository.
+- **Owner and source**: When the environment has an installation manager, use it and its guidance to identify each target's owner and editable source before editing.
+  Otherwise, follow the environment's established source and installation arrangement, using the supplied repository or document when it is authoritative.
+  Report material limits in the available tooling.
+- **Failed lookup**: When a lookup for a managed target fails, source discovery remains unresolved.
+  Do not bypass the failure by editing an installed copy or link target whose ownership is unverified.
+  Continue analysis or preparation that does not depend on the missing source.
+- **Separate operations**: Source edits, installation, and publication are distinct.
+  Inspect ownership and links before choosing an operation, because content updates can immediately affect linked installations.
+  An update request does not automatically authorize catalog changes, installation, publication, or modification of unrelated contents in the same repository.
 
 ## Design the change
 
@@ -67,7 +58,7 @@ An update request does not automatically authorize catalog changes, installation
 
    Distinguish structural review, scenario review, and actual execution, and state material limits.
    Frontmatter validation and source edits alone do not demonstrate behavioral effectiveness.
-1. Use AEM for authorized managed operations when available, following the operations skill and installed help.
+1. Perform authorized installation or publication through the environment's installation manager when one owns the target, following its guidance.
    Verify completed results rather than treating queued operations or previews as successful installation or publication.
    When only source editing is requested, report installation and distribution status without performing those additional operations.
 1. Define a proportionate follow-up observation.

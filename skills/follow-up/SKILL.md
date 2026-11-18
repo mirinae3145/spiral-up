@@ -16,7 +16,7 @@ Pick up work or questions left for later and connect them to the current state.
 Accept observation questions, improvement records, later evidence, handoffs, closeout summaries, or prior work records, regardless of their format or producing skill.
 Track what was left to observe, assess earlier improvements, prepare a restart, or continue handed-off work.
 These purposes can occur together.
-This skill does not require Wrap Up, Tune Up, a case store, or AEM to be installed.
+This skill does not require Wrap Up, Tune Up, a case store, or an installation manager to be installed.
 
 ## Establish the requested outcome
 

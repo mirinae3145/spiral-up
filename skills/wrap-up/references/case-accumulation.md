@@ -15,7 +15,7 @@ Keep device-specific paths out of the shared skill source.
 ## Read optional configuration
 
 For an optional local override, read `.config/agent-loop/config.toml` under the current environment's user home when the file exists.
-Read the UTF-8 TOML directly; no AEM lookup or automatic configuration discovery is needed.
+Read the UTF-8 TOML directly; no installation-manager lookup or automatic configuration discovery is needed.
 The existing format uses `version = 1` and a `case_recording` table with `root`, `mode`, and `audience`.
 `root` must be an absolute path valid in the current environment; do not expand variables or guess a replacement.
 Supported modes are `automatic`, `proposals`, and `disabled`; this local configuration supports the `personal` audience.
