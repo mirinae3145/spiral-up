@@ -39,6 +39,7 @@ Example requests:
 
 Ask Tune Up to improve instructions or skills, review accumulated cases, or assess an earlier change.
 It can edit, add, consolidate, or remove guidance.
+It places guidance in skills, your own instructions, or project documents by the scope in which it holds.
 Direct requests do not require prior case collection.
 You can ask for a proposal before applying changes.
 

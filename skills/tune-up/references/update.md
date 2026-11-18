@@ -41,7 +41,7 @@ An update request does not automatically authorize catalog changes, installation
    Include the summaries and entry points that lead readers to the target, since they decide whether it is read.
 1. Choose among editing, adding, consolidating, or removing instructions and skills.
    Prefer the smallest coherent change, including supporting documentation needed to use it.
-   Keep project-specific requirements in their governing documents and personal preferences in the appropriate personal source.
+   Place guidance among skills, user instructions, and project documents as [Guidance placement](placement.md) describes.
    Follow the user's instruction-file policy.
    This workflow does not require a repository-local `AGENTS.md`.
 1. For skill creation or revision, use available skill-authoring guidance and validators.
