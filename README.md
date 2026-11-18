@@ -51,7 +51,7 @@ Example requests:
 
 Describe the improvement's expected effect and a useful next observation so later work can assess it.
 An applied change and evidence that it helped are separate outcomes.
-AEM is optional and can help Tune Up locate managed sources.
+An installation manager such as AEM is optional and can help Tune Up locate managed sources.
 Installation and publication require their own authorization.
 
 ## Follow up the handoff
