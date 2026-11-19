@@ -41,7 +41,7 @@ When justified by the request or evidence, edit existing instructions and skills
 Choose whether to change wording, placement, or the skill's procedure rather than treating another rule as the default answer.
 When guidance could belong in a skill, user instructions, or project documents, read [Guidance placement](references/placement.md).
 Discover and use available skill-authoring guidance when creating or revising skills.
-New skills may define task procedures, but implementing broader workflow systems or automation remains follow-up work in this version.
+New skills may define task procedures, but propose broader workflow systems or automation as follow-up work outside this skill.
 
 Use the environment's installation manager, when one exists, for managed-source discovery and operations.
 Neither an installation manager nor Wrap Up is required to use Tune Up.
