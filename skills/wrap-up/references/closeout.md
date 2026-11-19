@@ -2,7 +2,7 @@
 
 Check the actual final state against the requested outcome and complete the applicable closeout work.
 Leave a verified result or a resumable handoff.
-This procedure covers inspection, cleanup, documentation, validation, retrospective review, and handoff records.
+This procedure covers inspection, cleanup, documentation, validation, retrospective review, task tracker reconciliation, and handoff records.
 
 ## Complete the closeout
 
@@ -16,6 +16,7 @@ Apply these steps within the requested outcome and authorized scope:
 1. **Reconcile** &mdash; compare the evidence with the objective to identify completed work, missing work, and unrequested changes.
    Handle missing work according to the [requested outcome](../SKILL.md#scope-and-requested-outcome).
    List unrequested changes for the user to keep or revert.
+   Then follow [Task tracker](#task-tracker).
 1. **Clean** &mdash; only in the area the task worked in, using [Cleanup decisions](#cleanup-decisions) to classify each leftover.
 1. **Update** &mdash; when completing the task, provide the documentation needed to use or maintain its changes.
    Cover changed behavior, setup, and configuration, following the project's document conventions.
@@ -62,6 +63,15 @@ An OS temp file may serve as a temporary handoff, but report its path and lack o
 Reference specs, commits, and diffs by path instead of copying them.
 Name any relevant skills for the next session and redact secrets.
 
-When relevant to closeout, look up related open tasks only in a tracker used for this task or in items the user designated.
-Before updating those tasks, check whether existing authorization covers the concrete change.
-Request approval only when it does not.
+## Task tracker
+
+Look up the open tracker tasks this task used and any items the user designated.
+Look only at those, not the rest of the tracker; without either, skip this step silently and list remaining work in the closeout summary.
+
+Compare each found task with the verified final state and propose one of: complete, record progress, change due date or description, or leave as is.
+State the evidence for each proposal, such as a commit, pull request, or document change; do not propose from the session narrative alone.
+Use the tracker's own skills or tools for the edit when available.
+
+Apply a change directly only when existing authorization covers that concrete change, including completion.
+Group the remaining proposals into one approval request.
+Do not create new tasks unasked; list follow-ups in the summary and ask once whether to register them.
