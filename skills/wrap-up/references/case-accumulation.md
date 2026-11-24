@@ -98,8 +98,9 @@ Retain the context needed to interpret and prioritize an observation:
 - **Severity**: Judge the actual and potential impact from its consequences, reversibility, and reach, such as user work, external state, or a near miss.
   Use the store's established scale; otherwise give a coarse level, such as high, medium, or low, with its basis.
   Judge severity independently of how often the problem occurred.
-- **Agent and model**: Identify the agent client and model that performed the work, including relevant versions or settings.
-  Take this identity from the environment or session records, and state when it is unknown.
+- **Agent and model**: Identify the agent client and model that performed the work, including relevant versions and settings such as reasoning effort.
+  Take them from the environment or session records, such as the settings a client logs with each turn, rather than from recollection.
+  State what remains unknown.
 - **Source and version**: When available and relevant, identify the instruction or skill source and version in effect at the time.
   State when that version is unknown; do not judge past actions solely against current wording.
 - **Earlier improvements**: For observations about an earlier improvement, link its existing record and known applied version.

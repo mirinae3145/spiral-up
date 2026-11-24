@@ -1,10 +1,11 @@
-# Case title
+# CASE-ID: Short title
 
 Occurred: date or unknown.
 Recorded: date.
 Context: task or project.
-Agent: client and model, or unknown.
+Agent: client, model, and relevant settings such as reasoning effort, from the session record, or unknown.
 Severity: level, such as high, medium, or low, and its basis.
+Source and version: instruction or skill source and version in effect, or unknown.
 
 ## Observation and evidence
 

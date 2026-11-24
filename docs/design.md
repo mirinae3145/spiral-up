@@ -101,7 +101,7 @@ Connection must not create or modify the store, replace installed links, or take
 Leave adoption of existing directories into AEM and edits to AEM-managed settings to explicit management workflows.
 Keep common recording policy separate from device-specific absolute paths and installation bindings.
 
-Keep the initial default template minimal and preserve existing stores, configuration, and authorization boundaries.
+Keep the initial default template minimal, offering only what the skills' recording procedures ask for, and preserve existing stores, configuration, and authorization boundaries.
 Automatic case recording requires explicit mode selection.
 Commits, publication, and guidance changes retain their own authorization.
 Git publication and history reconciliation remain outside the helper.
