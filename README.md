@@ -109,6 +109,13 @@ See [Case accumulation](skills/wrap-up/references/case-accumulation.md) for the 
 [Documentation](docs/README.md) introduces the setup guide and the design constraints for contributors.
 See [Contributing](CONTRIBUTING.md) for development setup, document structure, validation, and submitting changes.
 
+## License
+
+The store setup helper and its tests are licensed under the MIT License.
+The documentation, including the skills' instructions and reference documents, is licensed under CC BY 4.0.
+The store templates, which are copied into each user's store, and the repository configuration are dedicated to the public domain under CC0 1.0.
+[`REUSE.toml`](REUSE.toml) assigns each path its license and copyright holders, following the [REUSE](https://reuse.software/) specification, and the license texts are in [`LICENSES/`](LICENSES/).
+
 ## AI disclosure
 
 These skills are developed with AI assistance and intended for use by AI agents.

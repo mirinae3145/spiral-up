@@ -6,6 +6,7 @@ description: >
   connect results to later observations. Use for guidance and skill improvement,
   including new rules or skills and reviewing earlier improvements; not for
   ordinary code changes or task closeout alone.
+license: CC-BY-4.0; copyright 2026 Taeha Shin
 ---
 
 # Tune Up

@@ -49,6 +49,13 @@ The repository adds these specifics:
   A run without errors is the minimum, not evidence that a document conforms.
   When a change keeps a warning after judgment, say why in the review description.
 
+## Licenses
+
+Every tracked file is covered by an annotation in `REUSE.toml`.
+The store helper and its tests are MIT, documentation and skill packages are CC BY 4.0, and the store templates and repository configuration are CC0.
+Place a new file under a covered path, or add it to the matching annotation.
+Running `uvx reuse@6.3.0 lint` from the [REUSE tool](https://reuse.software/) confirms that every file is covered.
+
 ## Validation
 
 Match checks to the changed behavior and report structural checks, scenario review, and actual execution separately.
