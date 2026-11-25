@@ -6,6 +6,7 @@ description: >
   and workflow, as case records when authorized, for later improvement,
   resuming, or handing off.
   Use when the user explicitly asks to close out the task or session, either by completing it or by handing off its current state.
+license: CC-BY-4.0; copyright 2026 Taeha Shin and Yun Ji
 ---
 
 # Wrap Up

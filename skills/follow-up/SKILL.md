@@ -8,6 +8,7 @@ description: >
   that another skill manages, or asks to track what was left to observe or
   evaluate an earlier improvement. Not for task closeout or applying guidance
   changes alone.
+license: CC-BY-4.0; copyright 2026 Taeha Shin
 ---
 
 # Follow Up

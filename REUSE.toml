@@ -1,0 +1,26 @@
+version = 1
+
+# The last matching annotation applies, so the entry for the files that
+# Yun Ji contributed to overrides the general entry for documentation.
+
+[[annotations]]
+path = ["scripts/**", "tests/**"]
+SPDX-FileCopyrightText = "2026 Taeha Shin"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["README.md", "CONTRIBUTING.md", "docs/**", "skills/**"]
+SPDX-FileCopyrightText = "2026 Taeha Shin"
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = ["skills/wrap-up/SKILL.md", "skills/wrap-up/references/closeout.md"]
+SPDX-FileCopyrightText = ["2026 Taeha Shin", "2026 Yun Ji"]
+SPDX-License-Identifier = "CC-BY-4.0"
+
+# Store templates are copied into each user's personal store, so they carry
+# no attribution requirement.
+[[annotations]]
+path = [".gitignore", ".mddtignore", "templates/**"]
+SPDX-FileCopyrightText = "2026 Taeha Shin"
+SPDX-License-Identifier = "CC0-1.0"
