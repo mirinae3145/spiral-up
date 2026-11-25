@@ -50,6 +50,10 @@ Recording does not authorize instruction changes, external feedback, task-tracke
 ## Select what merits a case
 
 Judge retention value before drafting a lesson or searching for a future observation opportunity.
+Apply the same retention criteria to new cases and follow-up entries.
+When a safeguard blocks an action as intended and the agent recovers normally, omit the event by default.
+Retain it if it answers an open question or reveals a material risk, gap, or cost.
+
 Retain incidents that offer useful evidence for later assessment.
 Reasons for retention include:
 
